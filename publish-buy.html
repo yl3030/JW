@@ -19,6 +19,100 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body style="background-color: #eeeeee">
+    <div
+      class="modal fade"
+      id="login-modal"
+      tabindex="-1"
+      aria-labelledby="login-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <nav>
+              <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="col-6 nav-link active"
+                  id="nav-login-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-login"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-login"
+                  aria-selected="true"
+                >
+                  登入
+                </button>
+                <button
+                  class="col-6 nav-link"
+                  id="nav-signin-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-signin"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-signin"
+                  aria-selected="false"
+                >
+                  註冊
+                </button>
+              </div>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-login"
+                role="tabpanel"
+                aria-labelledby="nav-login-tab"
+              >
+                <form>
+                  <div class="input-box">
+                    <input type="text" placeholder="信箱" />
+                    <img src="./public/img/icon_mail.svg" alt="" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="密碼" />
+                    <img src="./public/img/icon_password.svg" alt="" />
+                  </div>
+                  <button data-bs-dismiss="modal">
+                    <a href="#">登入</a>
+                  </button>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-signin"
+                role="tabpanel"
+                aria-labelledby="nav-signin-tab"
+              >
+                <form>
+                  <div class="input-box">
+                    <input type="text" placeholder="信箱" />
+                    <img src="./public/img/icon_mail.svg" alt="" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="密碼" />
+                    <img src="./public/img/icon_password.svg" alt="" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="姓" />
+                    <img src="./public/img/icon_user-gray.svg" alt="" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="名" />
+                    <img src="./public/img/icon_user-gray.svg" alt="" />
+                  </div>
+                  <button data-bs-dismiss="modal">
+                    <a href="#">註冊</a>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="scrolldown">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="left">
@@ -33,106 +127,12 @@
         <div class="right">
           <!-- 未登入 -->
           <!-- <button
-                class="login-btn"
-                data-bs-toggle="modal"
-                data-bs-target="#login-modal"
-              >
-                註冊/登入
-              </button>
-              <div
-                class="modal fade"
-                id="login-modal"
-                tabindex="-1"
-                aria-labelledby="login-modalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <nav>
-                        <div class="row nav nav-tabs" id="nav-tab" role="tablist">
-                          <button
-                            class="col-6 nav-link active"
-                            id="nav-login-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#nav-login"
-                            type="button"
-                            role="tab"
-                            aria-controls="nav-login"
-                            aria-selected="true"
-                          >
-                            登入
-                          </button>
-                          <button
-                            class="col-6 nav-link"
-                            id="nav-signin-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#nav-signin"
-                            type="button"
-                            role="tab"
-                            aria-controls="nav-signin"
-                            aria-selected="false"
-                          >
-                            註冊
-                          </button>
-                        </div>
-                      </nav>
-                    </div>
-                    <div class="modal-body">
-                      <div class="tab-content" id="nav-tabContent">
-                        <div
-                          class="tab-pane fade show active"
-                          id="nav-login"
-                          role="tabpanel"
-                          aria-labelledby="nav-login-tab"
-                        >
-                          <form>
-                            <div class="input-box">
-                              <input type="text" placeholder="信箱" />
-                              <img src="./public/img/icon_mail.svg" alt="" />
-                            </div>
-                            <div class="input-box">
-                              <input type="text" placeholder="密碼" />
-                              <img src="./public/img/icon_password.svg" alt="" />
-                            </div>
-                            <button data-bs-dismiss="modal">
-                              <a href="#">登入</a>
-                            </button>
-                          </form>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="nav-signin"
-                          role="tabpanel"
-                          aria-labelledby="nav-signin-tab"
-                        >
-                          <form>
-                            <div class="input-box">
-                              <input type="text" placeholder="信箱" />
-                              <img src="./public/img/icon_mail.svg" alt="" />
-                            </div>
-                            <div class="input-box">
-                              <input type="text" placeholder="密碼" />
-                              <img src="./public/img/icon_password.svg" alt="" />
-                            </div>
-                            <div class="input-box">
-                              <input type="text" placeholder="姓" />
-                              <img src="./public/img/icon_user-gray.svg" alt="" />
-                            </div>
-                            <div class="input-box">
-                              <input type="text" placeholder="名" />
-                              <img src="./public/img/icon_user-gray.svg" alt="" />
-                            </div>
-                            <button data-bs-dismiss="modal">
-                              <a href="#">註冊</a>
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+          class="login-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#login-modal"
+        >
+          註冊/登入
+        </button> -->
           <!-- 已登入 -->
           <div
             class="member-btn d-flex align-items-center justify-content-between"
