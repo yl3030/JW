@@ -18,113 +18,117 @@
     <header class="scrolldown">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="left">
-          <img src="./public/img/LOGO.png" alt="" />
+          <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
-              <li><a href="#">想買車</a></li>
-              <li class="active"><a href="#">想試車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
+              <li class="active"><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
         <div class="right">
           <!-- 未登入 -->
           <!-- <button
-            class="login-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#login-modal"
-          >
-            註冊/登入
-          </button>
-          <div
-            class="modal fade"
-            id="login-modal"
-            tabindex="-1"
-            aria-labelledby="login-modalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <nav>
-                    <div class="row nav nav-tabs" id="nav-tab" role="tablist">
-                      <button
-                        class="col-6 nav-link active"
-                        id="nav-login-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-login"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-login"
-                        aria-selected="true"
-                      >
-                        登入
-                      </button>
-                      <button
-                        class="col-6 nav-link"
-                        id="nav-signin-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-signin"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-signin"
-                        aria-selected="false"
-                      >
-                        註冊
-                      </button>
+                class="login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#login-modal"
+              >
+                註冊/登入
+              </button>
+              <div
+                class="modal fade"
+                id="login-modal"
+                tabindex="-1"
+                aria-labelledby="login-modalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <nav>
+                        <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                          <button
+                            class="col-6 nav-link active"
+                            id="nav-login-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-login"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-login"
+                            aria-selected="true"
+                          >
+                            登入
+                          </button>
+                          <button
+                            class="col-6 nav-link"
+                            id="nav-signin-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-signin"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-signin"
+                            aria-selected="false"
+                          >
+                            註冊
+                          </button>
+                        </div>
+                      </nav>
                     </div>
-                  </nav>
-                </div>
-                <div class="modal-body">
-                  <div class="tab-content" id="nav-tabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="nav-login"
-                      role="tabpanel"
-                      aria-labelledby="nav-login-tab"
-                    >
-                      <form>
-                        <div class="input-box">
-                          <input type="text" placeholder="信箱" />
-                          <img src="./public/img/icon_mail.svg" alt="" />
+                    <div class="modal-body">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="nav-login"
+                          role="tabpanel"
+                          aria-labelledby="nav-login-tab"
+                        >
+                          <form>
+                            <div class="input-box">
+                              <input type="text" placeholder="信箱" />
+                              <img src="./public/img/icon_mail.svg" alt="" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="密碼" />
+                              <img src="./public/img/icon_password.svg" alt="" />
+                            </div>
+                            <button data-bs-dismiss="modal">
+                              <a href="#">登入</a>
+                            </button>
+                          </form>
                         </div>
-                        <div class="input-box">
-                          <input type="text" placeholder="密碼" />
-                          <img src="./public/img/icon_password.svg" alt="" />
+                        <div
+                          class="tab-pane fade"
+                          id="nav-signin"
+                          role="tabpanel"
+                          aria-labelledby="nav-signin-tab"
+                        >
+                          <form>
+                            <div class="input-box">
+                              <input type="text" placeholder="信箱" />
+                              <img src="./public/img/icon_mail.svg" alt="" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="密碼" />
+                              <img src="./public/img/icon_password.svg" alt="" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="姓" />
+                              <img src="./public/img/icon_user-gray.svg" alt="" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="名" />
+                              <img src="./public/img/icon_user-gray.svg" alt="" />
+                            </div>
+                            <button data-bs-dismiss="modal">
+                              <a href="#">註冊</a>
+                            </button>
+                          </form>
                         </div>
-                        <button data-bs-dismiss="modal"><a href="#">登入</a></button>
-                      </form>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="nav-signin"
-                      role="tabpanel"
-                      aria-labelledby="nav-signin-tab"
-                    >
-                      <form>
-                        <div class="input-box">
-                          <input type="text" placeholder="信箱" />
-                          <img src="./public/img/icon_mail.svg" alt="" />
-                        </div>
-                        <div class="input-box">
-                          <input type="text" placeholder="密碼" />
-                          <img src="./public/img/icon_password.svg" alt="" />
-                        </div>
-                        <div class="input-box">
-                          <input type="text" placeholder="姓" />
-                          <img src="./public/img/icon_user-gray.svg" alt="" />
-                        </div>
-                        <div class="input-box">
-                          <input type="text" placeholder="名" />
-                          <img src="./public/img/icon_user-gray.svg" alt="" />
-                        </div>
-                        <button data-bs-dismiss="modal"><a href="#">註冊</a></button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div> -->
+              </div> -->
           <!-- 已登入 -->
           <div
             class="member-btn d-flex align-items-center justify-content-between"
@@ -133,7 +137,7 @@
             <span>name</span>
             <div class="dropdown">
               <ul>
-                <li><a href="#">個人主頁</a></li>
+                <li><a href="./member-purse.html">個人主頁</a></li>
                 <li><a href="#">變更密碼</a></li>
                 <li><a href="#">登出</a></li>
               </ul>
@@ -151,11 +155,11 @@
             <div class="choice col-md-9">
               <div class="choice-outer">
                 <div class="choice-box d-flex align-items-center p-1">
-                        <ul class="try-tab">
-                            <li class="active">皆可</li>
-                            <li>試乘</li>
-                            <li>試駕</li>
-                        </ul>
+                  <ul class="try-tab">
+                    <li class="active">皆可</li>
+                    <li>試乘</li>
+                    <li>試駕</li>
+                  </ul>
                   <span class="you-choose">您已選擇</span>
                   <div class="d-flex align-items-center px-2">
                     <div
@@ -391,51 +395,51 @@
           aria-labelledby="want-all-tab"
         >
           <p class="total-find">共找到<span>39482</span>輛車</p>
-          <div
-            class="
-              product-box
-              d-flex
-              align-items-center
-              justify-content-between
-            "
-          >
-            <div class="pic">
-              <img src="./public/img/product_1.png" alt="" />
-            </div>
-            <div class="detail">
-              <h4>Honda Civic 2013款 1.8L</h4>
-              <p class="content">
-                ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
-              </p>
-              <div class="other-inform">
-                <div>
-                  <img src="./public/img/icon_place.svg" alt="" /><span
-                    >桃園市</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_clock.svg" alt="" /><span
-                    >2分鐘前</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_eye.svg" alt="" /><span>686</span>
-                </div>
-              </div>
-              <div class="audit">車身號已審</div>
-            </div>
-            <div
-              class="
-                main-inform
-                d-flex
-                align-items-center
-                justify-content-between
-              "
+          <div class="product-box">
+            <a
+              class="d-flex align-items-center justify-content-between"
+              href="./product-try.html"
             >
-              <p class="price">36.0萬</p>
-              <p class="year">2013年</p>
-              <p class="road">9.6萬km</p>
-            </div>
+              <div class="pic">
+                <img src="./public/img/product_1.png" alt="" />
+              </div>
+              <div class="detail">
+                <h4>Honda Civic 2013款 1.8L</h4>
+                <p class="content">
+                  ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
+                </p>
+                <div class="other-inform">
+                  <div>
+                    <img src="./public/img/icon_place.svg" alt="" /><span
+                      >桃園市</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_clock.svg" alt="" /><span
+                      >2分鐘前</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_eye.svg" alt="" /><span
+                      >686</span
+                    >
+                  </div>
+                </div>
+                <div class="audit">車身號已審</div>
+              </div>
+              <div
+                class="
+                  main-inform
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <p class="price">36.0萬</p>
+                <p class="year">2013年</p>
+                <p class="road">9.6萬km</p>
+              </div>
+            </a>
           </div>
           <div
             class="page-box d-flex align-items-center justify-content-between"
@@ -500,42 +504,51 @@
           aria-labelledby="want8891-tab"
         >
           <p class="total-find">共找到<span>39482</span>輛車</p>
-          <div
-            class="
-              product-box
-              d-flex
-              align-items-center
-              justify-content-between
-            "
-          >
-            <div class="pic">
-              <img src="./public/img/product_1.png" alt="" />
-            </div>
-            <div class="detail">
-              <h4>Honda Civic 2013款 1.8L</h4>
-              <p class="content">
-                ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
-              </p>
-              <div class="other-inform">
-                <div>
-                  <img src="./public/img/icon_phone.svg" alt="" /><span
-                    >桃園市</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_clock.svg" alt="" /><span
-                    >2分鐘前</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_eye.svg" alt="" /><span>686</span>
-                </div>
+          <div class="product-box">
+            <a
+              class="d-flex align-items-center justify-content-between"
+              href="./product-try.html"
+            >
+              <div class="pic">
+                <img src="./public/img/product_1.png" alt="" />
               </div>
-              <div class="audit">車身號已審</div>
-            </div>
-            <p class="price">36.0萬</p>
-            <p class="year">2013年</p>
-            <p class="road">9.6萬km</p>
+              <div class="detail">
+                <h4>Honda Civic 2013款 1.8L</h4>
+                <p class="content">
+                  ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
+                </p>
+                <div class="other-inform">
+                  <div>
+                    <img src="./public/img/icon_place.svg" alt="" /><span
+                      >桃園市</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_clock.svg" alt="" /><span
+                      >2分鐘前</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_eye.svg" alt="" /><span
+                      >686</span
+                    >
+                  </div>
+                </div>
+                <div class="audit">車身號已審</div>
+              </div>
+              <div
+                class="
+                  main-inform
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <p class="price">36.0萬</p>
+                <p class="year">2013年</p>
+                <p class="road">9.6萬km</p>
+              </div>
+            </a>
           </div>
           <div
             class="page-box d-flex align-items-center justify-content-between"
@@ -578,42 +591,51 @@
           aria-labelledby="recco-tab"
         >
           <p class="total-find">共找到<span>39482</span>輛車</p>
-          <div
-            class="
-              product-box
-              d-flex
-              align-items-center
-              justify-content-between
-            "
-          >
-            <div class="pic">
-              <img src="./public/img/product_1.png" alt="" />
-            </div>
-            <div class="detail">
-              <h4>Honda Civic 2013款 1.8L</h4>
-              <p class="content">
-                ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
-              </p>
-              <div class="other-inform">
-                <div>
-                  <img src="./public/img/icon_phone.svg" alt="" /><span
-                    >桃園市</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_clock.svg" alt="" /><span
-                    >2分鐘前</span
-                  >
-                </div>
-                <div>
-                  <img src="./public/img/icon_eye.svg" alt="" /><span>686</span>
-                </div>
+          <div class="product-box">
+            <a
+              class="d-flex align-items-center justify-content-between"
+              href="./product-try.html"
+            >
+              <div class="pic">
+                <img src="./public/img/product_1.png" alt="" />
               </div>
-              <div class="audit">車身號已審</div>
-            </div>
-            <p class="price">36.0萬</p>
-            <p class="year">2013年</p>
-            <p class="road">9.6萬km</p>
+              <div class="detail">
+                <h4>Honda Civic 2013款 1.8L</h4>
+                <p class="content">
+                  ✔️0元交車✔️全額貸✔️超貸✔️雙證件核貸✔️強力過件
+                </p>
+                <div class="other-inform">
+                  <div>
+                    <img src="./public/img/icon_place.svg" alt="" /><span
+                      >桃園市</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_clock.svg" alt="" /><span
+                      >2分鐘前</span
+                    >
+                  </div>
+                  <div>
+                    <img src="./public/img/icon_eye.svg" alt="" /><span
+                      >686</span
+                    >
+                  </div>
+                </div>
+                <div class="audit">車身號已審</div>
+              </div>
+              <div
+                class="
+                  main-inform
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
+              >
+                <p class="price">36.0萬</p>
+                <p class="year">2013年</p>
+                <p class="road">9.6萬km</p>
+              </div>
+            </a>
           </div>
           <div
             class="page-box d-flex align-items-center justify-content-between"
@@ -652,7 +674,7 @@
       </div>
 
       <button class="publish-btn">
-        <a class="d-flex align-items-center justify-content-between" href="#">
+        <a class="d-flex align-items-center justify-content-between" href="./publish-try.html">
           <img src="./public/img/icon_car.svg" alt="" />
           <span>刊登試車</span>
         </a>
@@ -664,8 +686,8 @@
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
             <ul>
-              <li><a href="#">想買車</a></li>
-              <li><a href="#">想試車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
+              <li><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>

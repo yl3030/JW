@@ -19,21 +19,21 @@
       padding: 0;
     }
   </style>
-  <body style="border-color: #e5e5e5;">
+  <body style="border-color: #e5e5e5">
     <header>
       <div class="container d-flex align-items-center justify-content-between">
         <div class="left">
-          <img src="./public/img/LOGO.png" alt="" />
+          <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
-              <li><a href="#">想買車</a></li>
-              <li><a href="#">想試車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
+              <li><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
         <div class="right">
           <!-- 未登入 -->
-          <!-- <button
+          <button
             class="login-btn"
             data-bs-toggle="modal"
             data-bs-target="#login-modal"
@@ -96,7 +96,9 @@
                           <input type="text" placeholder="密碼" />
                           <img src="./public/img/icon_password.svg" alt="" />
                         </div>
-                        <button data-bs-dismiss="modal"><a href="#">登入</a></button>
+                        <button data-bs-dismiss="modal">
+                          <a href="#">登入</a>
+                        </button>
                       </form>
                     </div>
                     <div
@@ -122,16 +124,18 @@
                           <input type="text" placeholder="名" />
                           <img src="./public/img/icon_user-gray.svg" alt="" />
                         </div>
-                        <button data-bs-dismiss="modal"><a href="#">註冊</a></button>
+                        <button data-bs-dismiss="modal">
+                          <a href="#">註冊</a>
+                        </button>
                       </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- 已登入 -->
-          <div
+          <!-- <div
             class="member-btn d-flex align-items-center justify-content-between"
           >
             <img src="./public/img/icon_user.svg" alt="" />
@@ -143,7 +147,7 @@
                 <li><a href="#">登出</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
@@ -166,7 +170,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img class="about-pic" src="./public/img/index_about_pic.png" alt="" />
+              <img
+                class="about-pic"
+                src="./public/img/index_about_pic.png"
+                alt=""
+              />
             </div>
             <div class="text col-md-6">
               <h2 class="second-title">
@@ -182,14 +190,14 @@
       </div>
       <div class="service">
         <div class="container">
-        <h2 class="second-title">
-          <p class="chinese">服務說明</p>
-          <p class="english">Service</p>
-        </h2>
-        <div
-          style="width: 100%; height: 500px; background-color: #d9d9d9"
-        ></div>
-      </div>
+          <h2 class="second-title">
+            <p class="chinese">服務說明</p>
+            <p class="english">Service</p>
+          </h2>
+          <div
+            style="width: 100%; height: 500px; background-color: #d9d9d9"
+          ></div>
+        </div>
       </div>
     </main>
     <footer>
@@ -198,8 +206,8 @@
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
             <ul>
-              <li><a href="#">想買車</a></li>
-              <li><a href="#">想試車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
+              <li><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
@@ -214,22 +222,21 @@
 
     <script>
       var scrollHeight = 90;
-if ($(window).scrollTop() > scrollHeight) {
-  $("header").addClass("scrolldown");
-} else {
-  $("header").removeClass("scrolldown");
-}
-$(window).on("scroll resize", function () {
-  console.log("not has class scrolldown");
-  if ($(window).scrollTop() > scrollHeight) {
-    $("header").addClass("scrolldown");
-    console.log("scrolldown");
-  } else {
-    $("header").removeClass("scrolldown");
-  }
-  console.log("scoll~");
-});
-
+      if ($(window).scrollTop() > scrollHeight) {
+        $("header").addClass("scrolldown");
+      } else {
+        $("header").removeClass("scrolldown");
+      }
+      $(window).on("scroll resize", function () {
+        console.log("not has class scrolldown");
+        if ($(window).scrollTop() > scrollHeight) {
+          $("header").addClass("scrolldown");
+          console.log("scrolldown");
+        } else {
+          $("header").removeClass("scrolldown");
+        }
+        console.log("scoll~");
+      });
     </script>
   </body>
 </html>

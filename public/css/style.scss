@@ -42,7 +42,7 @@ $main-text: #4d4d4d;
 }
 
 @mixin blue-bg-btn {
-  background-color: $main-color;
+  background-color: $second-color;
   border-radius: 15px;
   color: #fff;
   a {
@@ -93,8 +93,25 @@ textarea {
 
 .modal-dialog {
   margin: 6.75rem auto 0;
+  .modal-header {
+    border: 0;
+    padding: 0;
+  }
   .modal-content {
     border-radius: 20px;
+  }
+}
+
+.btn-box {
+  button {
+    padding: 10px 45px;
+    margin: 0 10px;
+    &.check {
+        @include blue-bg-btn;
+    }
+    &.cancel {
+        @include blue-border-btn;
+    }
   }
 }
 

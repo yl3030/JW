@@ -13,6 +13,10 @@
     />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./public/css/datepicker/bootstrap-datepicker.standalone.css"
+    />
     <script
       src="https://kit.fontawesome.com/69fd600045.js"
       crossorigin="anonymous"
@@ -26,8 +30,8 @@
           <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
-              <li class="active"><a href="./want-buy.html">想買車</a></li>
-              <li><a href="./want-try.html">想試車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
+              <li class="active"><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
@@ -158,7 +162,7 @@
         aria-label="breadcrumb"
       >
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
           <li class="breadcrumb-item"><a href="#">中古車</a></li>
           <li class="breadcrumb-item"><a href="#">賓士/Mercedes-Benz</a></li>
           <li class="breadcrumb-item"><a href="#">C-Class Sedan</a></li>
@@ -230,22 +234,22 @@
             <div class="d-flex justify-content-between align-items-end">
               <p class="price">36.0萬</p>
               <div class="certi pass">
-                <div class="number pass">
+                <!-- <div class="number pass">
                   <img src="./public/img/icon_check-green.svg" alt="" />
                   <a href="#" target="_blank">車身號已審核</a>
+                </div> -->
+                <div class="number not">
+                  <img src="./public/img/icon_check-gray.svg" alt="" />
+                  <a href="#" target="_blank">車身號未審核</a>
                 </div>
-                <!-- <div class="number not">
-                        <img src="./public/img/icon_check-gray.svg" alt="">
-                        <a href="#" target="_blank">車身號未審核</a>
-                    </div> -->
-                <div class="prize pass">
+                <!-- <div class="prize pass">
                   <img src="./public/img/icon_prize-yellow.svg" alt="" />
                   <a href="#" target="_blank">已驗證</a>
+                </div> -->
+                <div class="prize not">
+                  <img src="./public/img/icon_prize-gray.svg" alt="" />
+                  <a href="#" target="_blank">尚未驗證</a>
                 </div>
-                <!-- <div class="prize not">
-                        <img src="./public/img/icon_prize-gray.svg" alt="">
-                        <a href="#" target="_blank">尚未驗證</a>
-                    </div> -->
               </div>
             </div>
             <div class="inform">
@@ -276,16 +280,103 @@
                 </div>
               </div>
             </div>
-            <div class="contact">
-              <div>
-                <img src="./public/img/icon_person.svg" alt="" /><span
-                  >弘達國際汽車</span
-                >
-              </div>
-              <div>
-                <img src="./public/img/icon_phone.svg" alt="" /><span
-                  >0912093456</span
-                >
+            <button
+              class="reserve"
+              data-bs-toggle="modal"
+              data-bs-target="#reserve-modal"
+            >
+              <img src="./public/img/icon_wheel.svg" alt="" />
+              <span>預約試車</span>
+            </button>
+            <div
+              class="modal fade"
+              id="reserve-modal"
+              tabindex="-1"
+              aria-labelledby="reserve-modalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4>預約試車</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div
+                        class="
+                          input-box
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                        "
+                      >
+                        <span class="form-title">日期</span>
+                        <input
+                          type="text"
+                          class="form-control daterange"
+                          id="date"
+                          data-provide="datepicker"
+                        />
+                      </div>
+                      <div
+                        class="
+                          area-box
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                        "
+                      >
+                        <span class="form-title">時段</span>
+                        <div
+                          class="
+                            area
+                            d-flex
+                            align-items-center
+                            justify-content-between
+                          "
+                        >
+                          <input
+                            type="text"
+                            class="form-control daterange"
+                            id="start-date"
+                            data-provide="datepicker"
+                          />
+                          <span>~</span>
+                          <input
+                            type="text"
+                            class="form-control daterange"
+                            id="end-date"
+                            data-provide="datepicker"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          input-box
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                        "
+                      >
+                        <span class="form-title">地點</span>
+                        <input type="number" />
+                      </div>
+                      <div
+                        class="
+                          btn-box
+                          d-flex
+                          align-items-center
+                          justify-content-center
+                        "
+                      >
+                        <button class="notice"><a href="#">通知車主</a></button>
+                        <button class="cancel" data-bs-dismiss="modal">
+                          取消
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -678,6 +769,7 @@
     <script src="./public/js/bootstrap/bootstrap.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/datepicker/bootstrap-datepicker.js"></script>
     <script src="./public/js/index.js"></script>
 
     <script>
@@ -697,6 +789,20 @@
           nextEl: ".Pnext",
           prevEl: ".Pprev",
         },
+      });
+
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = now.getMonth() + 1;
+      var date = now.getDate();
+      var DateRange = year + "-" + month + "-" + date;
+      $("#start-date").val(DateRange);
+      $("#end-date").val(DateRange);
+      $("#date").val(DateRange);
+      $(".daterange").datepicker({
+        autoclose: true,
+        format: "yyyy-mm-dd",
+        todayHighlight: true,
       });
     </script>
   </body>

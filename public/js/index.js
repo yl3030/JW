@@ -5,3 +5,12 @@ $(".check-box").click(function(){
         $(this).addClass("active");
     }
 })
+
+$(".lb").click(function(){
+    $(".lb").removeClass("active");
+    if($(this).hasClass("active")){
+        $(this).removeClass("active");
+    }else {
+        $(this).addClass("active");
+    }
+})
