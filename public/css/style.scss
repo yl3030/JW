@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Squada+One&display=swap");
+$english-font: "Squada One", cursive;
+$main-color: #2ea9c5;
+$second-color: #81cada;
+$third-color: #ddf4fa;
+$main-gray: #bebebe;
+$main-text: #4d4d4d;
+
+@mixin common-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin common-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin blue-border-btn {
+  border: 1px solid $main-color;
+  border-radius: 15px;
+  color: $main-color;
+  a {
+    color: $main-color;
+  }
+}
+
+@mixin common-input {
+  border: 1px solid $main-gray;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+@mixin common-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+@mixin blue-bg-btn {
+  background-color: $main-color;
+  border-radius: 15px;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+@mixin white-bg-btn {
+  background-color: #fff;
+  border-radius: 15px;
+  color: $main-color;
+  a {
+    color: $main-color;
+  }
+}
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  color: $main-text;
+}
+
+a {
+  color: $main-text;
+  text-decoration: none;
+  &:hover {
+    color: $main-text;
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+.modal-dialog {
+  margin: 6.75rem auto 0;
+  .modal-content {
+    border-radius: 20px;
+  }
+}
+
+main {
+  padding-top: 70px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@import "_universal.scss";
+@import "_index.scss";
+@import "_inner.scss";
+@import "_member.scss";

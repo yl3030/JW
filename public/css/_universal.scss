@@ -1,0 +1,203 @@
+// header
+header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: 0.3s;
+  > div {
+    height: 100%;
+    .left {
+      img {
+        height: 50px;
+      }
+      nav {
+        margin-left: 65px;
+        display: inline-block;
+        ul {
+          li {
+            display: inline-block;
+            margin-right: 40px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &.active {
+              a {
+                font-weight: 700;
+                color: $main-color;
+              }
+            }
+            &:hover {
+              a {
+                font-weight: 700;
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      .login-btn {
+        padding: 10px 15px;
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      }
+      #login-modal {
+        .modal-header {
+          border: 0;
+          padding: 8px;
+          nav {
+            width: 100%;
+            .nav {
+              border: 0;
+              margin: 0;
+              button {
+                border: 0;
+                padding: 15px 0;
+                color: $main-text;
+                &.active {
+                  background-color: $second-color;
+                  color: #fff;
+                  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+                  border-radius: 15px;
+                }
+              }
+            }
+          }
+        }
+        .modal-body {
+          padding: 40px 40px 60px;
+          form {
+            .input-box {
+              width: 100%;
+              margin-bottom: 20px;
+              border: 1px solid $main-gray;
+              border-radius: 10px;
+              padding: 0 15px;
+              height: 45px;
+              @include common-flex;
+              input {
+                width: calc(100% - 55px);
+                border: 0;
+                height: 100%;
+              }
+              img {
+                width: 25px;
+              }
+            }
+            button {
+              width: 100%;
+              max-width: 290px;
+              font-weight: 700;
+              padding: 10px 0;
+              display: block;
+              margin: 10px auto 0;
+              @include blue-border-btn;
+            }
+          }
+        }
+      }
+      .member-btn {
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          .dropdown {
+            display: block;
+          }
+        }
+        img {
+          width: 35px;
+        }
+        span {
+          font-size: 17px;
+          font-weight: 700;
+          color: $main-color;
+          margin-bottom: 4px;
+          text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown {
+          background-color: #fff;
+          border: 1px solid $main-gray;
+          display: none;
+          min-width: 150px;
+          position: absolute;
+          padding: 5px 15px;
+          top: 100%;
+          right: 0;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+          ul {
+            li {
+              a {
+                display: block;
+                padding: 10px 0;
+                width: 100%;
+              }
+              &:hover {
+                a {
+                  font-weight: 700;
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.scrolldown {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+    >div {
+      .left {
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 40px 0;
+  background-color: #3f3f3f;
+  .left {
+    img {
+      height: 50px;
+    }
+    nav {
+      margin-left: 65px;
+      display: inline-block;
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 40px;
+          a {
+            color: #fff;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            a {
+              font-weight: 700;
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    color: #fff;
+    font-family: $english-font;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+  }
+}

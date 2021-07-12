@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <style>
+    main {
+      padding: 0;
+    }
+  </style>
+  <body style="border-color: #e5e5e5;">
+    <header>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO.png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="#">想買車</a></li>
+              <li><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <!-- 未登入 -->
+          <!-- <button
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button>
+          <div
+            class="modal fade"
+            id="login-modal"
+            tabindex="-1"
+            aria-labelledby="login-modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <nav>
+                    <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                      <button
+                        class="col-6 nav-link active"
+                        id="nav-login-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-login"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-login"
+                        aria-selected="true"
+                      >
+                        登入
+                      </button>
+                      <button
+                        class="col-6 nav-link"
+                        id="nav-signin-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-signin"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-signin"
+                        aria-selected="false"
+                      >
+                        註冊
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+                <div class="modal-body">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-login"
+                      role="tabpanel"
+                      aria-labelledby="nav-login-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">登入</a></button>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-signin"
+                      role="tabpanel"
+                      aria-labelledby="nav-signin-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="姓" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="名" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">註冊</a></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- 已登入 -->
+          <div
+            class="member-btn d-flex align-items-center justify-content-between"
+          >
+            <img src="./public/img/icon_user.svg" alt="" />
+            <span>name</span>
+            <div class="dropdown">
+              <ul>
+                <li><a href="#">個人主頁</a></li>
+                <li><a href="#">變更密碼</a></li>
+                <li><a href="#">登出</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="home-banner">
+        <h1>Safe & Reliable <span>Logistic</span><br />Solutions!</h1>
+        <button
+          class="
+            scrolldown
+            d-flex
+            align-items-center
+            justify-content-center
+            rounded-circle
+          "
+        >
+          <img src="./public/img/icno_arrow-blue.svg" alt="" />
+        </button>
+      </div>
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="about-pic" src="./public/img/index_about_pic.png" alt="" />
+            </div>
+            <div class="text col-md-6">
+              <h2 class="second-title">
+                <p class="chinese">關於我</p>
+                <p class="english">About Us</p>
+              </h2>
+              <p class="content">
+                關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我關於我
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="container">
+        <h2 class="second-title">
+          <p class="chinese">服務說明</p>
+          <p class="english">Service</p>
+        </h2>
+        <div
+          style="width: 100%; height: 500px; background-color: #d9d9d9"
+        ></div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO-white.png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="#">想買車</a></li>
+              <li><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">Copyright ©2021 All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+
+    <script>
+      var scrollHeight = 90;
+if ($(window).scrollTop() > scrollHeight) {
+  $("header").addClass("scrolldown");
+} else {
+  $("header").removeClass("scrolldown");
+}
+$(window).on("scroll resize", function () {
+  console.log("not has class scrolldown");
+  if ($(window).scrollTop() > scrollHeight) {
+    $("header").addClass("scrolldown");
+    console.log("scrolldown");
+  } else {
+    $("header").removeClass("scrolldown");
+  }
+  console.log("scoll~");
+});
+
+    </script>
+  </body>
+</html>

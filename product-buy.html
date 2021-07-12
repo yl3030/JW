@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>刊登試車</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <script
+      src="https://kit.fontawesome.com/69fd600045.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body style="background-color: #f9f9f9">
+    <header class="scrolldown">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO.png" alt="" />
+          <nav>
+            <ul>
+              <li class="active"><a href="#">想買車</a></li>
+              <li><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <!-- 未登入 -->
+          <!-- <button
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button>
+          <div
+            class="modal fade"
+            id="login-modal"
+            tabindex="-1"
+            aria-labelledby="login-modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <nav>
+                    <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                      <button
+                        class="col-6 nav-link active"
+                        id="nav-login-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-login"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-login"
+                        aria-selected="true"
+                      >
+                        登入
+                      </button>
+                      <button
+                        class="col-6 nav-link"
+                        id="nav-signin-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-signin"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-signin"
+                        aria-selected="false"
+                      >
+                        註冊
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+                <div class="modal-body">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-login"
+                      role="tabpanel"
+                      aria-labelledby="nav-login-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">登入</a></button>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-signin"
+                      role="tabpanel"
+                      aria-labelledby="nav-signin-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="姓" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="名" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">註冊</a></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- 已登入 -->
+          <div
+            class="member-btn d-flex align-items-center justify-content-between"
+          >
+            <img src="./public/img/icon_user.svg" alt="" />
+            <span>name</span>
+            <div class="dropdown">
+              <ul>
+                <li><a href="#">個人主頁</a></li>
+                <li><a href="#">變更密碼</a></li>
+                <li><a href="#">登出</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav
+        class="container breadcrumb-box"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">中古車</a></li>
+          <li class="breadcrumb-item"><a href="#">賓士/Mercedes-Benz</a></li>
+          <li class="breadcrumb-item"><a href="#">C-Class Sedan</a></li>
+          <li class="breadcrumb-item"><a href="#">C300</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            編號：S2796565
+          </li>
+        </ol>
+      </nav>
+      <div class="product-box container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="big-pic">
+              <img src="./public/img/product_1.png" alt="" />
+            </div>
+            <div class="swiper-container" id="product">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide active">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pic">
+                        <img src="./public/img/product_1.png" alt="">
+                        <div class="dark"></div>
+                    </div>
+                </div>
+              </div>
+              <!-- 箭頭 -->
+              <div class="Pprev arrow">
+                <img src="./public/img/icon_arrow-white.svg" alt="" />
+              </div>
+              <div class="Pnext arrow">
+                <img src="./public/img/icon_arrow-white.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="product-detail col-md-6">
+            <h1>Mercedes-Benz C-Class Sedan C300 2017款 手自排 2.0L</h1>
+            <p class="intro">BENZ C300 AMG 23P 還景 雙魚眼 17年 弘達國際#85389</p>
+            <div class="d-flex justify-content-between align-items-end">
+                <p class="price">36.0萬</p>
+                <div class="certi pass">
+                    <div class="number pass">
+                        <img src="./public/img/icon_check-green.svg" alt="">
+                        <a href="#" target="_blank">車身號已審核</a>
+                    </div>
+                    <!-- <div class="number not">
+                        <img src="./public/img/icon_check-gray.svg" alt="">
+                        <a href="#" target="_blank">車身號未審核</a>
+                    </div> -->
+                    <div class="prize pass">
+                        <img src="./public/img/icon_prize-yellow.svg" alt="">
+                        <a href="#" target="_blank">已驗證</a>
+                    </div>
+                    <!-- <div class="prize not">
+                        <img src="./public/img/icon_prize-gray.svg" alt="">
+                        <a href="#" target="_blank">尚未驗證</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="inform">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="label">行駛里程</div>
+                        <p>8.2萬公里</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="label">未領牌</div>
+                        <p>2016年</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="label">車身顏色</div>
+                        <p>白色</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="label">車門乘客數</div>
+                        <p>4門5座</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="label">引擎燃料</div>
+                        <p>汽油</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="label">驅動方式</div>
+                        <p>4WD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div><img src="./public/img/icon_person.svg" alt=""><span>弘達國際汽車</span></div>
+                <div><img src="./public/img/icon_phone.svg" alt=""><span>0912093456</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-intro">
+        <nav class="it">
+            <div
+              class="nav nav-tabs intro-tab common-tab container"
+              id="intro-tab"
+              role="tablist"
+            >
+              <button
+                class="nav-link active"
+                id="equipped-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#equipped"
+                type="button"
+                role="tab"
+                aria-controls="equipped"
+                aria-selected="true"
+              >
+                車輛配備
+              </button>
+              <button
+                class="nav-link"
+                id="feature-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#feature"
+                type="button"
+                role="tab"
+                aria-controls="feature"
+                aria-selected="false"
+              >
+                特色說明
+              </button>
+            </div>
+          </nav>
+          <div class="intro-tc tab-content container" id="want-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="equipped"
+              role="tabpanel"
+              aria-labelledby="equipped-tab"
+            >
+            <div class="equipped">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5 class="equipped-title">安全配備</h5>
+                    <ul class="row">
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>胎壓偵測</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>動態穩定系統</span>
+                      </li>
+                      <li class="col-6 nothave">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>防盜系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>keyless免鑰系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>循跡系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>中控鎖</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>剎車輔助系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>兒童安全椅固定裝置</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>ABS防鎖死</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>安全氣囊</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="equipped-title">舒適配備</h5>
+                    <ul class="row">
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>定速系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>LED頭燈</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>倒車顯影系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>衛星導航</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>多功能方向盤</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>倒車雷達</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>恆溫空調</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>自動停車系統</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>電動天窗</span>
+                      </li>
+                      <li class="col-6">
+                        <div class="check-pic">
+                            <img class="has-equipped" src="./public/img/icon_check-blue.svg" alt="">
+                            <img class="noequipped" src="./public/img/icon_check-gray.svg" alt="">
+                        </div>
+                        <span>真皮/皮革座椅</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="feature"
+              role="tabpanel"
+              aria-labelledby="feature-tab"
+            >
+              <p>特色說明特色說明特色說明特色說明特色說明特色說明特色說明特色說明特色說明特色說明特色說明</p>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO-white.png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="#">想買車</a></li>
+              <li><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">Copyright ©2021 All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+
+    <script>
+      var Pswiper = new Swiper("#product", {
+        // loop: true,
+        slidesPerView: 5,
+        spaceBetween: 10,
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
+        // pagination: {
+        //   el: "#banner-pag",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".Pnext",
+          prevEl: ".Pprev",
+        },
+      });
+    </script>
+  </body>
+</html>

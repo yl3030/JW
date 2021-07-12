@@ -1,0 +1,75 @@
+.home-banner {
+  width: 100%;
+  padding-bottom: 65%;
+  background-image: url(../img/index_banner.png);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  h1 {
+    font-family: $english-font;
+    line-height: 1.2;
+    position: absolute;
+    top: 17vw;
+    left: 4vw;
+    font-size: 70px;
+    span {
+      color: $main-color;
+    }
+  }
+  .scrolldown {
+    position: absolute;
+    left: 4vw;
+    top: 50vw;
+    border: 1px solid $main-color;
+    height: 40px;
+    width: 40px;
+    img {
+      width: 18px;
+    }
+  }
+}
+
+.second-title {
+    margin-bottom: 50px;
+  .chinese {
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: $main-color;
+  }
+  .english {
+    font-family: $english-font;
+    font-size: 30px;
+    color: #a6a6a6;
+  }
+}
+
+.about {
+  position: relative;
+  padding: 60px 0;
+  background-image: url(../img/index_bg.png);
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  .about-pic {
+    width: 100%;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+  }
+  .text {
+    padding-left: 50px;
+    .content {
+      font-size: 17px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.service {
+    background-color: #EFEFEF;
+    padding: 40px 0 100px;
+    .second-title {
+        text-align: center;
+    }
+}

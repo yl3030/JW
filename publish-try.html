@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>刊登試車</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/69fd600045.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./public/css/datepicker/bootstrap-datepicker.standalone.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body style="background-color: #eeeeee">
+    <header class="scrolldown">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO.png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="#">想買車</a></li>
+              <li class="active"><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <!-- 未登入 -->
+          <!-- <button
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button>
+          <div
+            class="modal fade"
+            id="login-modal"
+            tabindex="-1"
+            aria-labelledby="login-modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <nav>
+                    <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                      <button
+                        class="col-6 nav-link active"
+                        id="nav-login-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-login"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-login"
+                        aria-selected="true"
+                      >
+                        登入
+                      </button>
+                      <button
+                        class="col-6 nav-link"
+                        id="nav-signin-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-signin"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-signin"
+                        aria-selected="false"
+                      >
+                        註冊
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+                <div class="modal-body">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-login"
+                      role="tabpanel"
+                      aria-labelledby="nav-login-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">登入</a></button>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-signin"
+                      role="tabpanel"
+                      aria-labelledby="nav-signin-tab"
+                    >
+                      <form>
+                        <div class="input-box">
+                          <input type="text" placeholder="信箱" />
+                          <img src="./public/img/icon_mail.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="密碼" />
+                          <img src="./public/img/icon_password.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="姓" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="名" />
+                          <img src="./public/img/icon_user-gray.svg" alt="" />
+                        </div>
+                        <button data-bs-dismiss="modal"><a href="#">註冊</a></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- 已登入 -->
+          <div
+            class="member-btn d-flex align-items-center justify-content-between"
+          >
+            <img src="./public/img/icon_user.svg" alt="" />
+            <span>name</span>
+            <div class="dropdown">
+              <ul>
+                <li><a href="#">個人主頁</a></li>
+                <li><a href="#">變更密碼</a></li>
+                <li><a href="#">登出</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-banner publish-banner try">
+        <div class="dark"></div>
+        <img class="bg" src="./public/img/page_bg-triangle2.png" alt="" />
+        <h1>刊登試車</h1>
+        <div class="publish-content">
+          <form>
+            <div class="form-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">類別</span>
+                    <select>
+                      <option value="皆可">皆可</option>
+                      <option value="試乘">試乘</option>
+                      <option value="試駕">試駕</option>
+                    </select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">廠牌</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">型號</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">款式</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車色</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">年份</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="area-box">
+                    <span class="form-title">價格區間</span>
+                    <div class="area">
+                      <input type="number" />
+                      <span>~</span>
+                      <input type="number" />
+                      <span>萬</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="car-pic d-flex align-items-center flex-wrap">
+                    <span class="form-title">車輛照片</span>
+                    <div class="pic">
+                      <img src="./public/img/product_1.png" alt="" />
+                    </div>
+                    <div class="file-box">
+                      <input type="file" />
+                      <img src="./public/img/icon_plus.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="equipped">
+                    <span class="form-title">車輛配備</span>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="equipped-title">安全配備</h5>
+                        <ul class="row">
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>胎壓偵測</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>動態穩定系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>防盜系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>keyless免鑰系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>循跡系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>中控鎖</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>剎車輔助系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>兒童安全椅固定裝置</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>ABS防鎖死</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>安全氣囊</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="equipped-title">舒適配備</h5>
+                        <ul class="row">
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>定速系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>LED頭燈</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>倒車顯影系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>衛星導航</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>多功能方向盤</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>倒車雷達</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>恆溫空調</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>自動停車系統</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>電動天窗</span>
+                          </li>
+                          <li class="col-6">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>真皮/皮革座椅</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">電話</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">地址</span>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="area-box">
+                    <span class="form-title">可試乘時間</span>
+                    <div class="area">
+                      <input
+                        type="text"
+                        class="form-control daterange"
+                        id="start-date"
+                        data-provide="datepicker"
+                      />
+                      <span>~</span>
+                      <input
+                        type="text"
+                        class="form-control daterange"
+                        id="end-date"
+                        data-provide="datepicker"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車齡</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">地區</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車種</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">燃料</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">乘客數</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">變速系統</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">排氣量</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="remark">
+                    <span class="form-title">備註</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="form-btn d-flex justify-content-center align-items-center"
+            >
+              <button class="submit-btn">發布</button>
+              <button class="cancel-btn">取消</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="publish-box try"></div>
+    </main>
+    <footer>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="left">
+          <img src="./public/img/LOGO-white.png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="#">想買車</a></li>
+              <li><a href="#">想試車</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">Copyright ©2021 All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/datepicker/bootstrap-datepicker.js"></script>
+    <script src="./public/js/index.js"></script>
+
+    <script>
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = now.getMonth() + 1;
+      var date = now.getDate();
+      var DateRange = year + "-" + month + "-" + date;
+      $("#start-date").val(DateRange);
+      $("#end-date").val(DateRange);
+      $(".daterange").datepicker({
+        autoclose: true,
+        format: "yyyy-mm-dd",
+        todayHighlight: true,
+      });
+    </script>
+  </body>
+</html>
