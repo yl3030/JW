@@ -372,6 +372,7 @@ footer {
       display: flex;
       align-items: center;
       margin-bottom: 20px;
+      cursor: pointer;
       .check-box {
         cursor: pointer;
         width: 25px;
@@ -392,13 +393,16 @@ footer {
           color: #fff;
           opacity: 0;
         }
-        &.active {
+      }
+      &.active {
+        .check-box {
           background-color: $main-color;
           border-color: $main-color;
           i {
             opacity: 1;
           }
         }
+       
       }
     }
   }
@@ -474,6 +478,12 @@ footer {
       text-align: center;
     }
   }
+  .page-box {
+    .gotopage {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -498,7 +508,23 @@ footer {
       padding: 15px 20px;
     }
   } 
+
+  .publish-content {
+    .equipped {
+      ul {
+        li {
+          width: 100%;
+        }
+      } 
+    } 
+  }
+
+  .page-box {
+    padding-bottom: 0;
+  }
 }
+
+
 
 @media screen and (min-width: 769px) {
   header {

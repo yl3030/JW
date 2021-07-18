@@ -1,4 +1,4 @@
-$(".check-box").click(function () {
+$(".cb").click(function () {
   if ($(this).hasClass("active")) {
     $(this).removeClass("active");
   } else {
@@ -6,6 +6,7 @@ $(".check-box").click(function () {
   }
 });
 
+// 喜歡、不喜歡
 $(".lb").click(function () {
   $(this).parents(".like-box").children(".lb").removeClass("active");
   if ($(this).hasClass("active")) {
@@ -47,3 +48,7 @@ if($(window).width()<1025){
     })
 }
 
+// order list
+$(".order").click(function(){
+  $(".order-list").slideToggle(300);
+})
