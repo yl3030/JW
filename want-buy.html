@@ -111,24 +111,24 @@
     </div>
     <header class="scrolldown">
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="left">
+        <div class="left d-flex align-items-center">
           <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
-              <li class="active"><a href="./want-buy.html">想買車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
               <li><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
-        <div class="right">
+        <div class="right d-flex align-items-center">
           <!-- 未登入 -->
           <!-- <button
-          class="login-btn"
-          data-bs-toggle="modal"
-          data-bs-target="#login-modal"
-        >
-          註冊/登入
-        </button> -->
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button> -->
           <!-- 已登入 -->
           <div
             class="member-btn d-flex align-items-center justify-content-between"
@@ -143,6 +143,18 @@
               </ul>
             </div>
           </div>
+          <!-- 手機版 -->
+          <div id="menu-icon">
+            <div class="top-bar bar"></div>
+            <div class="middle-bar bar"></div>
+            <div class="bottom-bar bar"></div>
+            <nav class="mobile-nav">
+              <ul>
+                <li><a href="./want-buy.html">想買車</a></li>
+                <li><a href="./want-try.html">想試車</a></li>
+              </ul>
+            </nav>
+        </div>
         </div>
       </div>
     </header>
@@ -744,7 +756,7 @@
       </button>
     </main>
     <footer>
-      <div class="container d-flex align-items-center justify-content-between">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>

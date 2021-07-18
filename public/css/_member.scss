@@ -1,5 +1,5 @@
 .member {
-  padding: 60px 100px;
+  padding: 60px 0;
   .member-box {
     box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -20,21 +20,23 @@
       .list-box {
         width: 100%;
         padding: 30px 0;
-        li {
-          width: 100%;
-          margin: 10px 0;
-          a {
-            display: block;
+        ul {
+          li {
             width: 100%;
-            padding: 10px 0;
-            text-align: center;
-          }
-          &.active {
+            margin: 10px 0;
             a {
-              color: $main-color;
-              background-color: $third-color;
-              border-radius: 15px;
-              font-weight: 700;
+              display: block;
+              width: 100%;
+              padding: 10px 0;
+              text-align: center;
+            }
+            &.active {
+              a {
+                color: $main-color;
+                background-color: $third-color;
+                border-radius: 15px;
+                font-weight: 700;
+              }
             }
           }
         }
@@ -165,24 +167,31 @@
         }
         .input-box {
           .form-title {
-            width: 15%;
+            width: 18%;
             font-weight: 700;
             color: $main-color;
+            font-size: 14px;
           }
           input {
-            width: 60%;
+            width: 45%;
             @include common-input;
+            &#verti {
+              background-color: #f1f1f1;
+            }
           }
           button {
-            width: calc(25% - 15px);
+            width: calc(37% - 15px);
             font-size: 13px;
             border-radius: 5px;
             padding: 5px;
             color: #fff;
             background-color: $second-color;
+            &:active {
+              background-color: #6abacc;
+            }
           }
           .remain {
-            width: calc(25% - 10px);
+            width: calc(37% - 10px);
           }
         }
         .btn-box {
@@ -192,8 +201,11 @@
       &.reserve {
         .reserve-inform {
           .ri {
-              padding: 25px 0;
-              border-bottom: 1px solid $main-gray;
+            padding: 25px 0;
+            border-bottom: 1px solid $main-gray;
+            &:last-child {
+              border: 0;
+            }
             .pic {
               width: 25%;
               padding-bottom: 18%;
@@ -265,20 +277,22 @@
             .like-box {
               width: 25%;
               .lb {
-                  margin: 0 20px;
-                  text-align: center;
-                  color: $main-gray;
-                  cursor: pointer;
-                  i {
-                      font-size: 20px;
-                      margin-bottom: 8px;
-                  }
-                  p {
-                      font-size: 15px;
-                  }
-                  &.active {
-                      color: $main-color;
-                  }
+                padding: 0 15px;
+                text-align: center;
+                color: $main-gray;
+                cursor: pointer;
+                transition: 0.3s;
+                i {
+                  font-size: 20px;
+                  margin-bottom: 8px;
+                }
+                p {
+                  font-size: 15px;
+                  margin: 0;
+                }
+                &.active {
+                  color: $main-color;
+                }
               }
             }
           }
@@ -286,4 +300,194 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 991px) {
+  .member {
+    .member-box {
+      &.member-content {
+        &.identity {
+          .verti-box {
+            margin-top: 20px;
+          }
+          .identity-box {
+            .pic-box {
+              margin-bottom: 20px;
+            }
+          }
+          .input-box {
+            button {
+              width: calc(27% - 15px);
+            }
+            input {
+              width: 55%;
+            }
+            .remain {
+              width: calc(27% - 10px);
+              padding-left: 5px;
+            }
+          }
+        }
+        &.reserve {
+          .reserve-inform {
+            .ri {
+              .pic {
+                width: 50%;
+                padding-bottom: 36%;
+              }
+              .like-box {
+                width: 50%;
+              }
+              .text {
+                width: 100%;
+                padding-left: 0;
+                padding-top: 20px;
+              }
+            }
+          } 
+        } 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member {
+    padding: 100px 0 60px;
+    .mamber-name {
+      margin-bottom: 40px;
+    }
+    .member-box {
+      &.member-list {
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        .name-box {
+          border: 0;
+          .name {
+            margin: 0;
+          }
+        }
+        .list-box {
+          position: fixed;
+          width: 100%;
+          top: 70px;
+          left: 0;
+          background-color: #fff;
+          border-bottom: 1px solid $main-gray;
+          padding: 10px 15px;
+          z-index: 10;
+          overflow: auto;
+          ul {
+            width: 550px;
+            li {
+              width: auto;
+              display: inline-block;
+              margin: 0 10px;
+              a {
+                width: auto;
+                padding: 8px 15px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .page-box {
+    &.member-page {
+      margin: 0 auto;
+    }
+    .pagination {
+      > li {
+        &.arrow {
+          width: 30px;
+          height: 30px;
+        }
+        &:nth-child(2) {
+          margin: 0 10px;
+          ul {
+            height: 40px;
+            li {
+              height: 30px;
+              width: 30px;
+              a {
+                line-height: 30px;
+              }
+              &:nth-child(4) {
+                display: none;
+              }
+              &:nth-child(5) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .member {
+    .mamber-name {
+      margin-bottom: 0;
+    }
+    .member-box {
+      &.member-list {
+        padding: 20px;
+        height: auto;
+      }
+      &.member-content {
+        padding: 40px 20px;
+        &.identity {
+          .input-box {
+            flex-wrap: wrap;
+            .form-title {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+            input {
+              width: 55%;
+            }
+            button {
+              width: calc(45% - 15px);
+            }
+            .remain {
+              width: calc(45% - 15px);
+            }
+          } 
+        } 
+        &.reserve {
+          .reserve-inform {
+            .ri {
+              .like-box {
+                .lb {
+                  padding: 0 8px;
+                  p {
+                    font-size: 14px;
+                  }
+                } 
+              } 
+            } 
+          } 
+        } 
+        &.setting {
+          form {
+            .input-box {
+              span {
+                width: 20%;
+              }
+              input {
+                width: 80%;
+              }
+            } 
+          } 
+        } 
+      }
+    }
+  } 
 }

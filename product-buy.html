@@ -116,24 +116,24 @@
     </div>
     <header class="scrolldown">
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="left">
+        <div class="left d-flex align-items-center">
           <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
-              <li class="active"><a href="./want-buy.html">想買車</a></li>
+              <li><a href="./want-buy.html">想買車</a></li>
               <li><a href="./want-try.html">想試車</a></li>
             </ul>
           </nav>
         </div>
-        <div class="right">
+        <div class="right d-flex align-items-center">
           <!-- 未登入 -->
           <!-- <button
-          class="login-btn"
-          data-bs-toggle="modal"
-          data-bs-target="#login-modal"
-        >
-          註冊/登入
-        </button> -->
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button> -->
           <!-- 已登入 -->
           <div
             class="member-btn d-flex align-items-center justify-content-between"
@@ -147,6 +147,18 @@
                 <li><a href="#">登出</a></li>
               </ul>
             </div>
+          </div>
+          <!-- 手機版 -->
+          <div id="menu-icon">
+            <div class="top-bar bar"></div>
+            <div class="middle-bar bar"></div>
+            <div class="bottom-bar bar"></div>
+            <nav class="mobile-nav">
+              <ul>
+                <li><a href="./want-buy.html">想買車</a></li>
+                <li><a href="./want-try.html">想試車</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -171,54 +183,57 @@
       <div class="product-box container">
         <div class="row">
           <div class="col-md-6">
-            <div class="big-pic">
-              <img src="./public/img/product_1.png" alt="" />
+            <div thumbsSlider="" 
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper-container bigpic"
+            >
+              <div class="swiper-wrapper" data-bs-toggle="modal"
+              data-bs-target="#product-modal">
+                <div class="swiper-slide">
+                  <img src="./public/img/product_1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_4.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_5.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_6.png" />
+                </div>
+              </div>
+              <div class="swiper-button-next Bnext"></div>
+              <div class="swiper-button-prev Bprev"></div>
             </div>
-            <div class="swiper-container" id="product">
+            <div thumbsSlider="" class="swiper-container product-swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide active">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                <div class="swiper-slide">
+                  <img src="./public/img/product_1.png" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                  <img src="./public/img/product_2.png" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                  <img src="./public/img/product_3.png" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                  <img src="./public/img/product_4.png" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                  <img src="./public/img/product_5.png" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                    <div class="dark"></div>
-                  </div>
+                  <img src="./public/img/product_6.png" />
                 </div>
-              </div>
-              <!-- 箭頭 -->
-              <div class="Pprev arrow">
-                <img src="./public/img/icon_arrow-white.svg" alt="" />
-              </div>
-              <div class="Pnext arrow">
-                <img src="./public/img/icon_arrow-white.svg" alt="" />
               </div>
             </div>
           </div>
@@ -660,7 +675,15 @@
       </div>
     </main>
     <footer>
-      <div class="container d-flex align-items-center justify-content-between">
+      <div
+        class="
+          container
+          d-flex
+          flex-wrap
+          align-items-center
+          justify-content-between
+        "
+      >
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
@@ -681,21 +704,21 @@
     <script src="./public/js/index.js"></script>
 
     <script>
-      var Pswiper = new Swiper("#product", {
-        // loop: true,
-        slidesPerView: 5,
+      var Pswiper = new Swiper(".product-swiper", {
         spaceBetween: 10,
-        // autoplay: {
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // },
-        // pagination: {
-        //   el: "#banner-pag",
-        //   clickable: true,
-        // },
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var BigPic = new Swiper(".bigpic", {
+        spaceBetween: 10,
         navigation: {
-          nextEl: ".Pnext",
-          prevEl: ".Pprev",
+          nextEl: ".Bnext",
+          prevEl: ".Bprev",
+        },
+        thumbs: {
+          swiper: Pswiper,
         },
       });
     </script>

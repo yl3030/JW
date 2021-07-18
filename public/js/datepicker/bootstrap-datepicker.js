@@ -731,7 +731,7 @@
 				this.picker.css({
 					top: top + 0,
 					right: right,
-					zIndex: 1000
+					zIndex: 2000
 				});
 				if($(window).width()<768) {
 					this.picker.css({
@@ -742,7 +742,7 @@
 				this.picker.css({
 					top: top + 0,
 					left: left,
-					zIndex: 1000
+					zIndex: 2000
 				});
 				if($(window).width()<768) {
 					this.picker.css({

@@ -116,7 +116,7 @@
     </div>
     <header class="scrolldown">
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="left">
+        <div class="left d-flex align-items-center">
           <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
@@ -125,15 +125,15 @@
             </ul>
           </nav>
         </div>
-        <div class="right">
+        <div class="right d-flex align-items-center">
           <!-- 未登入 -->
           <!-- <button
-          class="login-btn"
-          data-bs-toggle="modal"
-          data-bs-target="#login-modal"
-        >
-          註冊/登入
-        </button> -->
+            class="login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#login-modal"
+          >
+            註冊/登入
+          </button> -->
           <!-- 已登入 -->
           <div
             class="member-btn d-flex align-items-center justify-content-between"
@@ -148,34 +148,49 @@
               </ul>
             </div>
           </div>
+          <!-- 手機版 -->
+          <div id="menu-icon">
+            <div class="top-bar bar"></div>
+            <div class="middle-bar bar"></div>
+            <div class="bottom-bar bar"></div>
+            <nav class="mobile-nav">
+              <ul>
+                <li><a href="./want-buy.html">想買車</a></li>
+                <li><a href="./want-try.html">想試車</a></li>
+              </ul>
+            </nav>
+        </div>
         </div>
       </div>
     </header>
     <main>
+      <div class="container">
       <div class="row member">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4 mamber-name">
           <div class="member-box member-list">
             <div class="name-box">
               <p class="name">name</p>
             </div>
-            <ul class="list-box">
-              <li><a href="./member-purse.html">錢包餘額</a></li>
-              <li><a href="./membere-setting.html">提領資料設定</a></li>
-              <li><a href="./member-identity.html">身分驗證</a></li>
-              <li class="active">
-                <a href="./member-reserve.html">預約資訊列表</a>
-              </li>
-            </ul>
+            <nav class="list-box">
+              <ul>
+                <li><a href="./member-purse.html">錢包餘額</a></li>
+                <li><a href="./membere-setting.html">提領資料設定</a></li>
+                <li>
+                  <a href="./member-identity.html">身分驗證</a>
+                </li>
+                <li class="active"><a href="./member-reserve.html">預約資訊列表</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-lg-9 col-md-8">
           <div class="member-box member-content reserve">
             <div class="reserve-inform">
-              <div class="ri d-flex align-items-center justify-content-between">
-                <div class="pic">
+              <div class="ri d-flex flex-wrap align-items-center justify-content-between">
+                <div class="pic order-lg-1">
                   <img src="./public/img/product_1.png" alt="" />
                 </div>
-                <div class="text">
+                <div class="text order-lg-2 order-3">
                   <h4>Honda Civic 2013款 1.8L</h4>
                   <div class="inform">
                     <img src="./public/img/icon_clock.svg" alt="" />
@@ -205,7 +220,7 @@
                     like-box
                     d-flex
                     align-items-center
-                    justify-content-center
+                    justify-content-center order-lg-3 order-2
                   "
                 >
                   <div class="lb">
@@ -218,11 +233,11 @@
                   </div>
                 </div>
               </div>
-              <div class="ri d-flex align-items-center justify-content-between">
-                <div class="pic">
+              <div class="ri d-flex flex-wrap align-items-center justify-content-between">
+                <div class="pic order-lg-1">
                   <img src="./public/img/product_1.png" alt="" />
                 </div>
-                <div class="text">
+                <div class="text order-lg-2 order-3">
                   <h4>Honda Civic 2013款 1.8L</h4>
                   <div class="inform">
                     <img src="./public/img/icon_clock.svg" alt="" />
@@ -252,7 +267,7 @@
                     like-box
                     d-flex
                     align-items-center
-                    justify-content-center
+                    justify-content-center order-lg-3 order-2
                   "
                 >
                   <div class="lb">
@@ -265,11 +280,11 @@
                   </div>
                 </div>
               </div>
-              <div class="ri d-flex align-items-center justify-content-between">
-                <div class="pic">
+              <div class="ri d-flex flex-wrap align-items-center justify-content-between">
+                <div class="pic order-lg-1">
                   <img src="./public/img/product_1.png" alt="" />
                 </div>
-                <div class="text">
+                <div class="text order-lg-2 order-3">
                   <h4>Honda Civic 2013款 1.8L</h4>
                   <div class="inform">
                     <img src="./public/img/icon_clock.svg" alt="" />
@@ -299,7 +314,7 @@
                     like-box
                     d-flex
                     align-items-center
-                    justify-content-center
+                    justify-content-center order-lg-3 order-2
                   "
                 >
                   <div class="lb">
@@ -312,11 +327,11 @@
                   </div>
                 </div>
               </div>
-              <div class="ri d-flex align-items-center justify-content-between">
-                <div class="pic">
+              <div class="ri d-flex flex-wrap align-items-center justify-content-between">
+                <div class="pic order-lg-1">
                   <img src="./public/img/product_1.png" alt="" />
                 </div>
-                <div class="text">
+                <div class="text order-lg-2 order-3">
                   <h4>Honda Civic 2013款 1.8L</h4>
                   <div class="inform">
                     <img src="./public/img/icon_clock.svg" alt="" />
@@ -346,7 +361,7 @@
                     like-box
                     d-flex
                     align-items-center
-                    justify-content-center
+                    justify-content-center order-lg-3 order-2
                   "
                 >
                   <div class="lb">
@@ -363,7 +378,7 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex justify-content-end">
+      <div class="container d-flex justify-content-end px-0">
         <div
           class="
             member-page
@@ -418,9 +433,10 @@
           </ul>
         </div>
       </div>
+    </div>
     </main>
     <footer>
-      <div class="container d-flex align-items-center justify-content-between">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>

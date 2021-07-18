@@ -116,7 +116,7 @@
     </div>
     <header>
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="left">
+        <div class="left d-flex align-items-center">
           <a href="./index.html"><img src="./public/img/LOGO.png" alt="" /></a>
           <nav>
             <ul>
@@ -125,7 +125,7 @@
             </ul>
           </nav>
         </div>
-        <div class="right">
+        <div class="right d-flex align-items-center">
           <!-- 未登入 -->
           <button
             class="login-btn"
@@ -148,6 +148,18 @@
               </ul>
             </div>
           </div> -->
+          <!-- 手機版 -->
+          <div id="menu-icon">
+            <div class="top-bar bar"></div>
+            <div class="middle-bar bar"></div>
+            <div class="bottom-bar bar"></div>
+            <nav class="mobile-nav">
+              <ul>
+                <li><a href="./want-buy.html">想買車</a></li>
+                <li><a href="./want-try.html">想試車</a></li>
+              </ul>
+            </nav>
+        </div>
         </div>
       </div>
     </header>
@@ -156,7 +168,7 @@
         <h1>Safe & Reliable <span>Logistic</span><br />Solutions!</h1>
         <button
           class="
-            scrolldown
+            scrolldown-btn
             d-flex
             align-items-center
             justify-content-center
@@ -201,7 +213,7 @@
       </div>
     </main>
     <footer>
-      <div class="container d-flex align-items-center justify-content-between">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
@@ -227,16 +239,19 @@
       } else {
         $("header").removeClass("scrolldown");
       }
-      $(window).on("scroll resize", function () {
-        console.log("not has class scrolldown");
+      $(window).on("scroll", function () {
         if ($(window).scrollTop() > scrollHeight) {
           $("header").addClass("scrolldown");
-          console.log("scrolldown");
         } else {
           $("header").removeClass("scrolldown");
         }
-        console.log("scoll~");
       });
+
+      var scrolldownTop = $(window).width()*0.65 - 70;
+      $(".scrolldown-btn").click(function(){
+        console.log("click!!!");
+        $("html,body").animate({scrollTop:scrolldownTop},parseInt(100));
+      })
     </script>
   </body>
 </html>

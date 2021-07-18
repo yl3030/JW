@@ -127,7 +127,21 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+@media screen and (max-width:575px) {
+  .modal-dialog {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .btn-box button {
+    padding: 10px 20px;
+  }
+}
+
 @import "_universal.scss";
 @import "_index.scss";
 @import "_inner.scss";
+@import "_product.scss";
+@import "_publish.scss";
 @import "_member.scss";
