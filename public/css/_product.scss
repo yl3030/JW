@@ -291,6 +291,32 @@
   }
 }
 
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next {
+  span {
+    background-image: url(../css/fancybox/fancybox_sprite@2x.png);
+    background-size: 44px 152px;
+  }
+}
+
+.fancybox-prev {
+  left: -50px;
+  span {
+    left: 0;
+  }
+}
+
+.fancybox-next {
+  right: -50px;
+  span {
+    right: 0;
+  }
+}
+
+.fancybox-close {
+  top: -10px;
+  right: -35px;
+}
+
 @media screen and (max-width: 991px) {
   .product-detail {
     h1 {

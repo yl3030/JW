@@ -1787,6 +1787,32 @@ footer .right {
   color: #bebebe;
 }
 
+#fancybox-loading span, .fancybox-close span, .fancybox-prev span span, .fancybox-next span {
+  background-image: url(../css/fancybox/fancybox_sprite@2x.png);
+  background-size: 44px 152px;
+}
+
+.fancybox-prev {
+  left: -50px;
+}
+
+.fancybox-prev span {
+  left: 0;
+}
+
+.fancybox-next {
+  right: -50px;
+}
+
+.fancybox-next span {
+  right: 0;
+}
+
+.fancybox-close {
+  top: -10px;
+  right: -35px;
+}
+
 @media screen and (max-width: 991px) {
   .product-detail h1 {
     font-size: 22px;

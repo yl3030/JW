@@ -13,12 +13,30 @@
     />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./public/css/fancybox/jquery.fancybox-buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/css/fancybox/jquery.fancybox-thumbs.css"
+    />
+    <link rel="stylesheet" href="./public/css/fancybox/jquery.fancybox.css" />
     <script
       src="https://kit.fontawesome.com/69fd600045.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
+  <style>
+    #fancybox-loading,
+    .fancybox-close,
+    .fancybox-prev span,
+    .fancybox-next span {
+      background-image: url(./public/css/fancybox/fancybox_sprite@2x.png);
+      background-size: 44px 152px;
+    }
+  </style>
   <body style="background-color: #f9f9f9">
     <div
       class="modal fade"
@@ -190,25 +208,36 @@
               "
               class="swiper-container bigpic"
             >
-              <div class="swiper-wrapper" data-bs-toggle="modal"
-              data-bs-target="#product-modal">
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_1.png">
                   <img src="./public/img/product_1.png" />
+                </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./public/img/product_2.png" />
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_2.png">
+                    <img src="./public/img/product_2.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./public/img/product_3.png" />
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_3.png">
+                    <img src="./public/img/product_3.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./public/img/product_4.png" />
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_4.png">
+                    <img src="./public/img/product_4.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./public/img/product_5.png" />
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_5.png">
+                    <img src="./public/img/product_5.png" />
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./public/img/product_6.png" />
+                  <a class="fancybox" rel="gallery1" href="./public/img/product_6.png">
+                    <img src="./public/img/product_6.png" />
+                  </a>
                 </div>
               </div>
               <div class="swiper-button-next Bnext"></div>
@@ -701,6 +730,12 @@
     <script src="./public/js/bootstrap/bootstrap.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/fancybox/jquery.fancybox-buttons.js"></script>
+    <script src="./public/js/fancybox/jquery.fancybox-media.js"></script>
+    <script src="./public/js/fancybox/jquery.fancybox-thumbs.js"></script>
+    <script src="./public/js/fancybox/jquery.fancybox.js"></script>
+    <script src="./public/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="./public/js/fancybox/jquery.mousewheel.pack.js"></script>
     <script src="./public/js/index.js"></script>
 
     <script>
@@ -720,6 +755,14 @@
         thumbs: {
           swiper: Pswiper,
         },
+      });
+      $(document).ready(function () {
+        $(".fancybox").fancybox({
+          //   openEffect: "none",
+          //   closeEffect: "none",
+          prevEffect: "none",
+          nextEffect: "none",
+        });
       });
     </script>
   </body>
