@@ -30,7 +30,7 @@ input,
 select,
 textarea {
   outline: none;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .modal-dialog {
