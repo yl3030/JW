@@ -111,6 +111,18 @@
             margin-top: 30px;
           }
         }
+        &.password {
+          form {
+            .input-box {
+              span {
+                width: 70px;
+              }
+              input {
+                width: calc(100% - 70px);
+              }
+            }
+          }
+        }
       }
       &.identity {
         .identity-box {
@@ -381,7 +393,7 @@
             display: none;
           }
           ul {
-            width: 550px;
+            width: 650px;
             li {
               width: auto;
               display: inline-block;
@@ -432,6 +444,13 @@
       }
     } 
   }
+  .member {
+    .member-box {
+      &.member-content {
+        padding: 40px 20px;
+      }
+    }
+  } 
 }
 
 @media screen and (max-width: 414px) {
@@ -489,6 +508,21 @@
               }
             } 
           } 
+          &.password {
+            form {
+              .input-box {
+                flex-wrap: wrap;
+                span {
+                  width: 100%;
+                  margin-bottom: 10px;
+                }
+                input {
+                  width: 100%;
+                }
+              }
+            }
+            
+          }
         } 
       }
     }

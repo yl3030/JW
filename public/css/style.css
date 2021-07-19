@@ -2126,6 +2126,32 @@ footer .right {
   height: 100px;
 }
 
+.publish-banner .publish-content .form-body .structure {
+  border: 1px solid #2ea9c5;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+  padding: 30px;
+}
+
+.publish-banner .publish-content .form-body .structure .form-title {
+  position: absolute;
+  top: -13px;
+  left: 15px;
+  padding: 0 10px;
+  background-color: #fff;
+  width: auto;
+}
+
+.publish-banner .publish-content .form-body .structure .input-box .form-second-title {
+  font-size: 15px;
+  width: 115px;
+}
+
+.publish-banner .publish-content .form-body .structure .input-box input {
+  width: calc(100% - 115px);
+}
+
 .publish-banner .publish-content .form-btn {
   width: 100%;
   margin: 40px auto 0;
@@ -2160,7 +2186,7 @@ footer .right {
 
 .publish-box {
   width: 100%;
-  height: 1150px;
+  height: 1850px;
 }
 
 .publish-box.try {
@@ -2171,12 +2197,12 @@ footer .right {
   .publish-banner .publish-content {
     padding: 0 20px;
   }
-  .publish-box {
-    height: 1250px;
-  }
 }
 
 @media screen and (max-width: 991px) {
+  .publish-box {
+    height: 2000px;
+  }
   .publish-box.try {
     height: 1300px;
   }
@@ -2184,7 +2210,7 @@ footer .right {
 
 @media screen and (max-width: 767px) {
   .publish-box {
-    height: 2000px;
+    height: 3250px;
   }
   .publish-box.try {
     height: 2100px;
@@ -2250,11 +2276,21 @@ footer .right {
     padding-bottom: 48%;
     margin: 0;
   }
+  .publish-banner .publish-content .form-body .structure {
+    padding: 30px 15px;
+  }
+  .publish-banner .publish-content .form-body .structure .input-box .form-second-title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .publish-banner .publish-content .form-body .structure .input-box input {
+    width: 100%;
+  }
   .publish-banner .publish-content .form-btn button {
     padding: 15px 25px;
   }
   .publish-box {
-    height: 3000px;
+    height: 4850px;
   }
   .publish-box.try {
     height: 3100px;
@@ -2407,6 +2443,14 @@ footer .right {
 
 .member .member-box.member-content.setting form .btn-box {
   margin-top: 30px;
+}
+
+.member .member-box.member-content.setting.password form .input-box span {
+  width: 70px;
+}
+
+.member .member-box.member-content.setting.password form .input-box input {
+  width: calc(100% - 70px);
 }
 
 .member .member-box.member-content.identity .identity-box {
@@ -2682,7 +2726,7 @@ footer .right {
     display: none;
   }
   .member .member-box.member-list .list-box ul {
-    width: 550px;
+    width: 650px;
   }
   .member .member-box.member-list .list-box ul li {
     width: auto;
@@ -2721,6 +2765,9 @@ footer .right {
   }
   .page-box .pagination > li:nth-child(2) ul li:nth-child(5) {
     display: none;
+  }
+  .member .member-box.member-content {
+    padding: 40px 20px;
   }
 }
 
@@ -2763,6 +2810,17 @@ footer .right {
   }
   .member .member-box.member-content.setting form .input-box input {
     width: 80%;
+  }
+  .member .member-box.member-content.setting.password form .input-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .member .member-box.member-content.setting.password form .input-box span {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .member .member-box.member-content.setting.password form .input-box input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
