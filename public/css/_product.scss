@@ -302,6 +302,7 @@
   left: -50px;
   span {
     left: 0;
+    visibility: visible;
   }
 }
 
@@ -309,6 +310,7 @@
   right: -50px;
   span {
     right: 0;
+    visibility: visible;
   }
 }
 
@@ -355,6 +357,16 @@
 @media screen and (max-width: 767px) {
   .product-detail {
     margin-top: 40px;
+  }
+  .fancybox-close {
+    top: -35px;
+    right: -10px;
+  }
+  .fancybox-prev {
+    left: 0;
+  }
+  .fancybox-next {
+    right: 0;
   }
 }
 

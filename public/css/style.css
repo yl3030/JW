@@ -33,7 +33,7 @@ textarea {
 }
 
 .modal-dialog {
-  margin: 6.75rem auto 0;
+  margin: 6.75rem auto;
 }
 
 .modal-dialog .modal-header {
@@ -645,7 +645,7 @@ footer .right {
     width: 100%;
   }
   .page-box {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -1063,6 +1063,7 @@ footer .right {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 10;
 }
 
 .wt .want-tab .icon-box > div {
@@ -1798,6 +1799,7 @@ footer .right {
 
 .fancybox-prev span {
   left: 0;
+  visibility: visible;
 }
 
 .fancybox-next {
@@ -1806,6 +1808,7 @@ footer .right {
 
 .fancybox-next span {
   right: 0;
+  visibility: visible;
 }
 
 .fancybox-close {
@@ -1855,6 +1858,16 @@ footer .right {
 @media screen and (max-width: 767px) {
   .product-detail {
     margin-top: 40px;
+  }
+  .fancybox-close {
+    top: -35px;
+    right: -10px;
+  }
+  .fancybox-prev {
+    left: 0;
+  }
+  .fancybox-next {
+    right: 0;
   }
 }
 
@@ -2663,6 +2676,9 @@ footer .right {
     padding: 10px 15px;
     z-index: 10;
     overflow: auto;
+  }
+  .member .member-box.member-list .list-box::-webkit-scrollbar {
+    display: none;
   }
   .member .member-box.member-list .list-box ul {
     width: 550px;
