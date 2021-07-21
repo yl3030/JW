@@ -76,8 +76,8 @@
                     <input type="text" placeholder="密碼" />
                     <img src="./public/img/icon_password.svg" alt="" />
                   </div>
-                  <button data-bs-dismiss="modal">
-                    <a href="#">登入</a>
+                  <button id="login-btn">
+                    <a>登入</a>
                   </button>
                 </form>
               </div>
@@ -159,7 +159,7 @@
                 <li><a href="./want-try.html">想試車</a></li>
               </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>
@@ -213,7 +213,15 @@
       </div>
     </main>
     <footer>
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div
+        class="
+          container
+          d-flex
+          flex-wrap
+          align-items-center
+          justify-content-between
+        "
+      >
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
@@ -233,6 +241,10 @@
     <script src="./public/js/index.js"></script>
 
     <script>
+      $("#login-btn").click(function () {
+        $("#login-modal").hide().hide.bs.modal;
+      });
+
       var scrollHeight = 90;
       if ($(window).scrollTop() > scrollHeight) {
         $("header").addClass("scrolldown");
@@ -247,11 +259,11 @@
         }
       });
 
-      var scrolldownTop = $(window).width()*0.65 - 70;
-      $(".scrolldown-btn").click(function(){
+      var scrolldownTop = $(window).width() * 0.65 - 70;
+      $(".scrolldown-btn").click(function () {
         console.log("click!!!");
-        $("html,body").animate({scrollTop:scrolldownTop},parseInt(100));
-      })
+        $("html,body").animate({ scrollTop: scrolldownTop }, parseInt(100));
+      });
     </script>
   </body>
 </html>

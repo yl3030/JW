@@ -55,20 +55,51 @@ textarea {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn-box button.check a {
   color: #fff;
 }
 
+.btn-box button.check:hover {
+  background-color: #32bedd;
+}
+
+.btn-box button.check.unable {
+  background-color: #bebebe;
+}
+
 .btn-box button.cancel {
   border: 1px solid #2ea9c5;
   border-radius: 15px;
   color: #2ea9c5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn-box button.cancel a {
   color: #2ea9c5;
+}
+
+.btn-box button.cancel:hover {
+  border-color: #81cada;
+  color: #fff;
+  background-color: #81cada;
+}
+
+.btn-box button.cancel:hover a {
+  color: #fff;
+}
+
+.btn-box button.cancel.unable {
+  background-color: #bebebe;
+  color: #fff;
+}
+
+.btn-box button.cancel.unable a {
+  color: #fff;
 }
 
 main {
@@ -124,6 +155,16 @@ input[type="number"] {
   border-radius: 15px;
 }
 
+#login-modal .modal-header nav .nav button.active:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
+#login-modal .modal-header nav .nav button:hover {
+  color: #2ea9c5;
+  font-weight: 700;
+}
+
 #login-modal .modal-body {
   padding: 40px 40px 60px;
 }
@@ -168,10 +209,31 @@ input[type="number"] {
   border: 1px solid #2ea9c5;
   border-radius: 15px;
   color: #2ea9c5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #login-modal .modal-body form button a {
   color: #2ea9c5;
+}
+
+#login-modal .modal-body form button:hover {
+  border-color: #81cada;
+  color: #fff;
+  background-color: #81cada;
+}
+
+#login-modal .modal-body form button:hover a {
+  color: #fff;
+}
+
+#login-modal .modal-body form button.unable {
+  background-color: #bebebe;
+  color: #fff;
+}
+
+#login-modal .modal-body form button.unable a {
+  color: #fff;
 }
 
 header {
@@ -224,6 +286,10 @@ header > div .right .login-btn {
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+header > div .right .login-btn:hover {
+  background-color: #1fbee2;
 }
 
 header > div .right .member-btn {
@@ -470,6 +536,12 @@ footer .right {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-box .gotopage button:hover {
+  background-color: #32bedd;
 }
 
 .page-box.member-page {
@@ -574,6 +646,47 @@ footer .right {
   width: fit-content;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-box span {
+  font-weight: 700;
+  color: #2ea9c5;
+}
+
+.input-box select,
+.input-box input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.input-box .arrow {
+  width: 15px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -830,6 +943,8 @@ footer .right {
   bottom: 80px;
   right: 40px;
   z-index: 100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .publish-btn a {
@@ -847,6 +962,10 @@ footer .right {
   font-weight: bold;
   font-size: 18px;
   margin-left: 15px;
+}
+
+.publish-btn:hover {
+  background-color: #bcf2ff;
 }
 
 .want-banner {
@@ -1644,6 +1763,8 @@ footer .right {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   line-height: 1;
@@ -1652,6 +1773,14 @@ footer .right {
 
 .product-detail .reserve a {
   color: #fff;
+}
+
+.product-detail .reserve:hover {
+  background-color: #32bedd;
+}
+
+.product-detail .reserve.unable {
+  background-color: #bebebe;
 }
 
 .product-detail .reserve img {
@@ -1744,20 +1873,51 @@ footer .right {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product-detail #reserve-modal .modal-content .modal-body .btn-box button.notice a {
   color: #fff;
 }
 
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.notice:hover {
+  background-color: #32bedd;
+}
+
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.notice.unable {
+  background-color: #bebebe;
+}
+
 .product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel {
   border: 1px solid #2ea9c5;
   border-radius: 15px;
   color: #2ea9c5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel a {
   color: #2ea9c5;
+}
+
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel:hover {
+  border-color: #81cada;
+  color: #fff;
+  background-color: #81cada;
+}
+
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel:hover a {
+  color: #fff;
+}
+
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel.unable {
+  background-color: #bebebe;
+  color: #fff;
+}
+
+.product-detail #reserve-modal .modal-content .modal-body .btn-box button.cancel.unable a {
+  color: #fff;
 }
 
 .product-intro {
@@ -1978,40 +2138,11 @@ footer .right {
 
 .publish-banner .publish-content .form-body .input-box {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 20px;
-  position: relative;
 }
 
 .publish-banner .publish-content .form-body .input-box select,
 .publish-banner .publish-content .form-body .input-box input {
   width: 80%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 1px solid #bebebe;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0 10px;
-}
-
-.publish-banner .publish-content .form-body .input-box .arrow {
-  width: 15px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .publish-banner .publish-content .form-body .area-box {
@@ -2168,20 +2299,50 @@ footer .right {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .publish-banner .publish-content .form-btn .submit-btn a {
   color: #fff;
 }
 
+.publish-banner .publish-content .form-btn .submit-btn:hover {
+  background-color: #32bedd;
+}
+
+.publish-banner .publish-content .form-btn .submit-btn.unable {
+  background-color: #bebebe;
+}
+
 .publish-banner .publish-content .form-btn .cancel-btn {
   background-color: #fff;
   border-radius: 15px;
   color: #2ea9c5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .publish-banner .publish-content .form-btn .cancel-btn a {
   color: #2ea9c5;
+}
+
+.publish-banner .publish-content .form-btn .cancel-btn:hover {
+  background-color: #32bedd;
+  color: #fff;
+}
+
+.publish-banner .publish-content .form-btn .cancel-btn:hover a {
+  color: #fff;
+}
+
+.publish-banner .publish-content .form-btn .cancel-btn.unable {
+  background-color: #bebebe;
+  color: #fff;
+}
+
+.publish-banner .publish-content .form-btn .cancel-btn.unable a {
+  color: #fff;
 }
 
 .publish-box {
@@ -2369,6 +2530,8 @@ footer .right {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 10px 25px;
   display: block;
   margin: 0 auto;
@@ -2376,6 +2539,14 @@ footer .right {
 
 .member .member-box.member-content.purse button a {
   color: #fff;
+}
+
+.member .member-box.member-content.purse button:hover {
+  background-color: #32bedd;
+}
+
+.member .member-box.member-content.purse button.unable {
+  background-color: #bebebe;
 }
 
 .member .member-box.member-content.purse #purse-modal h4 {
@@ -2409,11 +2580,21 @@ footer .right {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 50%;
 }
 
 .member .member-box.member-content.purse #purse-modal .modal-content form button a {
   color: #fff;
+}
+
+.member .member-box.member-content.purse #purse-modal .modal-content form button:hover {
+  background-color: #32bedd;
+}
+
+.member .member-box.member-content.purse #purse-modal .modal-content form button.unable {
+  background-color: #bebebe;
 }
 
 .member .member-box.member-content.setting form {
@@ -2429,16 +2610,10 @@ footer .right {
 
 .member .member-box.member-content.setting form .input-box span {
   width: 15%;
-  color: #2ea9c5;
-  font-weight: 700;
 }
 
-.member .member-box.member-content.setting form .input-box input {
+.member .member-box.member-content.setting form .input-box input, .member .member-box.member-content.setting form .input-box select {
   width: 85%;
-  border: 1px solid #bebebe;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0 10px;
 }
 
 .member .member-box.member-content.setting form .btn-box {
@@ -2449,7 +2624,7 @@ footer .right {
   width: 70px;
 }
 
-.member .member-box.member-content.setting.password form .input-box input {
+.member .member-box.member-content.setting.password form .input-box input, .member .member-box.member-content.setting.password form .input-box select {
   width: calc(100% - 70px);
 }
 
@@ -2464,7 +2639,7 @@ footer .right {
   margin-bottom: 10px;
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box {
+.member .member-box.member-content.identity .identity-box .ib .pic-box {
   width: 100%;
   padding-bottom: 55%;
   position: relative;
@@ -2472,7 +2647,7 @@ footer .right {
   border: 1px solid #bebebe;
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box .text {
+.member .member-box.member-content.identity .identity-box .ib .pic-box .text {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2480,7 +2655,7 @@ footer .right {
           transform: translate(-50%, -50%);
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box .text p {
+.member .member-box.member-content.identity .identity-box .ib .pic-box .text p {
   color: #bebebe;
   text-align: center;
   font-size: 24px;
@@ -2488,7 +2663,7 @@ footer .right {
   margin-bottom: 10px;
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box .text .file-box {
+.member .member-box.member-content.identity .identity-box .ib .pic-box .text .file-box {
   position: relative;
   width: 60px;
   height: 35px;
@@ -2497,7 +2672,7 @@ footer .right {
   border-radius: 5px;
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box .text .file-box button {
+.member .member-box.member-content.identity .identity-box .ib .pic-box .text .file-box button {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2508,26 +2683,75 @@ footer .right {
   border-radius: 5px;
 }
 
-.member .member-box.member-content.identity .identity-box .pic-box .text .file-box input {
+.member .member-box.member-content.identity .identity-box .ib .pic-box .text .file-box input {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
+.member .member-box.member-content.identity .identity-box .ib .pic-box .identity-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn {
+  border: 1px solid #2ea9c5;
+  border-radius: 15px;
+  color: #2ea9c5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+  padding: 5px 8px;
+  margin-top: 15px;
+  border-radius: 8px;
+  position: relative;
+  display: none;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn a {
+  color: #2ea9c5;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn:hover {
+  border-color: #81cada;
+  color: #fff;
+  background-color: #81cada;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn:hover a {
+  color: #fff;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn.unable {
+  background-color: #bebebe;
+  color: #fff;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn.unable a {
+  color: #fff;
+}
+
+.member .member-box.member-content.identity .identity-box .ib .reset-btn input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 .member .member-box.member-content.identity .input-box .form-title {
   width: 18%;
-  font-weight: 700;
-  color: #2ea9c5;
   font-size: 14px;
 }
 
 .member .member-box.member-content.identity .input-box input {
   width: 45%;
-  border: 1px solid #bebebe;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0 10px;
 }
 
 .member .member-box.member-content.identity .input-box input#verti {

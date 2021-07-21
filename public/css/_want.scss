@@ -30,6 +30,7 @@
   bottom: 80px;
   right: 40px;
   z-index: 100;
+  transition: 0.3s;
   a {
     display: block;
     width: 100%;
@@ -43,6 +44,9 @@
       font-size: 18px;
       margin-left: 15px;
     }
+  }
+  &:hover {
+    background-color: $third-hover-color;
   }
 }
 

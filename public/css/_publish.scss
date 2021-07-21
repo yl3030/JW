@@ -41,24 +41,24 @@
       padding: 60px 40px;
       .input-box {
         width: 100%;
-        @include common-flex;
-        margin-bottom: 20px;
-        position: relative;
+        // @include common-flex;
+        // margin-bottom: 20px;
+        // position: relative;
         select,
         input {
           width: 80%;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          @include common-input;
+          // -webkit-appearance: none;
+          // -moz-appearance: none;
+          // appearance: none;
+          // @include common-input;
         }
-        .arrow {
-          width: 15px;
-          position: absolute;
-          right: 15px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
+        // .arrow {
+        //   width: 15px;
+        //   position: absolute;
+        //   right: 15px;
+        //   top: 50%;
+        //   transform: translateY(-50%);
+        // }
       }
       .area-box {
         @include common-flex;

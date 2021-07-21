@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Squada+One&display=swap");
 $english-font: "Squada One", cursive;
 $main-color: #2ea9c5;
+$main-hover-color: #1fbee2;
 $second-color: #81cada;
+$second-hover-color: #32bedd;
 $third-color: #ddf4fa;
+$third-hover-color: #bcf2ff;
 $main-gray: #bebebe;
 $main-text: #4d4d4d;
 
@@ -23,8 +26,24 @@ $main-text: #4d4d4d;
   border: 1px solid $main-color;
   border-radius: 15px;
   color: $main-color;
+  transition: 0.3s;
   a {
     color: $main-color;
+  }
+  &:hover {
+    border-color: $second-color;
+    color: #fff;
+    background-color: $second-color;
+    a {
+      color: #fff;
+    }
+  }
+  &.unable {
+    background-color: $main-gray;
+    color: #fff;
+    a {
+      color: #fff;
+    }
   }
 }
 
@@ -45,8 +64,15 @@ $main-text: #4d4d4d;
   background-color: $second-color;
   border-radius: 15px;
   color: #fff;
+  transition: 0.3s;
   a {
     color: #fff;
+  }
+  &:hover {
+    background-color: $second-hover-color;
+  }
+  &.unable {
+    background-color: $main-gray;
   }
 }
 
@@ -54,8 +80,23 @@ $main-text: #4d4d4d;
   background-color: #fff;
   border-radius: 15px;
   color: $main-color;
+  transition: 0.3s;
   a {
     color: $main-color;
+  }
+  &:hover {
+    background-color: $second-hover-color;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  &.unable {
+    background-color: $main-gray;
+    color: #fff;
+    a {
+      color: #fff;
+    }
   }
 }
 
