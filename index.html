@@ -76,7 +76,7 @@
                     <input type="text" placeholder="密碼" />
                     <img src="./public/img/icon_password.svg" alt="" />
                   </div>
-                  <button id="login-btn">
+                  <button id="login-btn" data-bs-dismiss="modal">
                     <a>登入</a>
                   </button>
                 </form>
@@ -236,14 +236,13 @@
     </footer>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
-    <script src="./public/js/bootstrap/bootstrap.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/index.js"></script>
 
     <script>
-      $("#login-btn").click(function () {
-        $("#login-modal").hide().hide.bs.modal;
-      });
+      // $("#login-btn").click(function () {
+      //   $("#login-modal").hide().hide.bs.modal;
+      // });
 
       var scrollHeight = 90;
       if ($(window).scrollTop() > scrollHeight) {
