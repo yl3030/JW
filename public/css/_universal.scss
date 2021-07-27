@@ -439,6 +439,7 @@ footer {
   span {
     font-weight: 700;
     color: $main-color;
+    width: 90px;
   }
   select,
   input {
@@ -446,6 +447,7 @@ footer {
     -moz-appearance: none;
     appearance: none;
     @include common-input;
+    width: calc(100% - 90px);
   }
   .arrow {
     width: 15px;

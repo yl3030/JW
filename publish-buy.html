@@ -158,7 +158,7 @@
                 <li><a href="./want-try.html">想試車</a></li>
               </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>
@@ -168,401 +168,462 @@
         <img class="bg" src="./public/img/page_bg-triangle2.png" alt="" />
         <h1>刊登賣車</h1>
         <div class="publish-content">
-            <form>
-              <div class="form-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">廠牌</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
+          <form>
+            <div class="form-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">廠牌</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">型號</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">型號</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">款式</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">款式</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">車色</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車色</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">年份</span>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">年份</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="area-box">
+                    <span class="form-title">價格區間</span>
+                    <div class="area">
                       <input type="number" />
+                      <span>~</span>
+                      <input type="number" />
+                      <span>萬</span>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="area-box">
-                      <span class="form-title">價格區間</span>
-                      <div class="area">
-                        <input type="number" />
-                        <span>~</span>
-                        <input type="number" />
-                        <span>萬</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="car-pic d-flex align-items-center flex-wrap">
-                      <span class="form-title">車輛照片</span>
-                      <div class="pic">
-                        <img src="./public/img/product_1.png" alt="" />
-                      </div>
+                </div>
+                <div class="col-12">
+                  <div class="car-pic">
+                    <span class="form-title">車輛照片</span>
+                    <div id="cp" class="d-flex align-items-center flex-wrap">
+                      <!-- <div class="pic">
+                        <img
+                          class="publish-pic"
+                          src="./public/img/product_1.png"
+                          alt=""
+                        />
+                      </div> -->
                       <div class="file-box">
-                          <img src="./public/img/icon_plus.svg" alt="" />
-                          <input type="file" />
+                        <img
+                          class="plus"
+                          src="./public/img/icon_plus.svg"
+                          alt=""
+                        />
+                        <input type="file" id="file-box" />
+                        <!-- <img class="pic" src="./public/img/product_1.png" alt="" /> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <div class="equipped">
-                      <span class="form-title">車輛配備</span>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h5 class="equipped-title">安全配備</h5>
-                          <ul class="row">
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>胎壓偵測</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>動態穩定系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>防盜系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>keyless免鑰系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>循跡系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>中控鎖</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>剎車輔助系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>兒童安全椅固定裝置</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>ABS防鎖死</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>安全氣囊</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6">
-                          <h5 class="equipped-title">舒適配備</h5>
-                          <ul class="row">
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>定速系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>LED頭燈</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>倒車顯影系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>衛星導航</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>多功能方向盤</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>倒車雷達</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>恆溫空調</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>自動停車系統</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>電動天窗</span>
-                            </li>
-                            <li class="col-6 cb">
-                              <div class="check-box rounded-circle"><i class="fas fa-check"></i></div>
-                              <span>真皮/皮革座椅</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">電話</span>
-                      <input type="number" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">地址</span>
-                      <input type="text" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">車齡</span>
-                      <input type="number" />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">地區</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">車種</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">燃料</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">乘客數</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">變速系統</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-box">
-                      <span class="form-title">排氣量</span>
-                      <select></select>
-                      <img
-                        class="arrow"
-                        src="./public/img/icon_arrow-gray.svg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12 structure">
-                    <span class="form-title">車體結構</span>
+                </div>
+                <div class="col-12">
+                  <div class="equipped">
+                    <span class="form-title">車輛配備</span>
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">後車箱底版</span>
-                          <input type="text">
-                        </div>
+                        <h5 class="equipped-title">安全配備</h5>
+                        <ul class="row">
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>胎壓偵測</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>動態穩定系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>防盜系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>keyless免鑰系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>循跡系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>中控鎖</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>剎車輔助系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>兒童安全椅固定裝置</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>ABS防鎖死</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>安全氣囊</span>
+                          </li>
+                        </ul>
                       </div>
                       <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左側後?子板</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左側CD柱</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">屋頂結構</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左側戶定</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左後大樑</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左輪艙(外)</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左側B柱</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">防火牆</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右前避震座</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右前大梁</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">底盤/前底盤</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">下水箱支架</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">上水箱支架</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">左前大梁</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">左前避震座</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左側A柱</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左前內龜板</span>
-                          <input type="text">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="input-box">
-                          <span class="form-second-title">右/左劍尾</span>
-                          <input type="text">
-                        </div>
+                        <h5 class="equipped-title">舒適配備</h5>
+                        <ul class="row">
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>定速系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>LED頭燈</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>倒車顯影系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>衛星導航</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>多功能方向盤</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>倒車雷達</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>恆溫空調</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>自動停車系統</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>電動天窗</span>
+                          </li>
+                          <li class="col-6 cb">
+                            <div class="check-box rounded-circle">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <span>真皮/皮革座椅</span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12">
-                      <div class="remark">
-                        <span class="form-title">備註</span>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">電話</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">地址</span>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車齡</span>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">地區</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">車種</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">燃料</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">乘客數</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">變速系統</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-box">
+                    <span class="form-title">排氣量</span>
+                    <select></select>
+                    <img
+                      class="arrow"
+                      src="./public/img/icon_arrow-gray.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 structure">
+                  <span class="form-title">車體結構</span>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">後車箱底版</span>
+                        <input type="text" />
                       </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左側後?子板</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左側CD柱</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">屋頂結構</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左側戶定</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左後大樑</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左輪艙(外)</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左側B柱</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">防火牆</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右前避震座</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右前大梁</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">底盤/前底盤</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">下水箱支架</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">上水箱支架</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">左前大梁</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">左前避震座</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左側A柱</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左前內龜板</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-box">
+                        <span class="form-second-title">右/左劍尾</span>
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="remark">
+                    <span class="form-title">備註</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
                   </div>
                 </div>
               </div>
-              <div class="form-btn d-flex justify-content-center align-items-center">
-                  <button class="submit-btn">發布</button>
-                  <button class="cancel-btn">取消</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div
+              class="form-btn d-flex justify-content-center align-items-center"
+            >
+              <button class="submit-btn">發布</button>
+              <button class="cancel-btn">取消</button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="publish-box"></div>
     </main>
     <footer>
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div
+        class="
+          container
+          d-flex
+          flex-wrap
+          align-items-center
+          justify-content-between
+        "
+      >
         <div class="left">
           <img src="./public/img/LOGO-white.png" alt="" />
           <nav>
@@ -579,5 +640,6 @@
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/index.js"></script>
+    <script src="./public/js/publish-upload-pic.js"></script>
   </body>
 </html>

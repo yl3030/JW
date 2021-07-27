@@ -238,17 +238,22 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 10;
-      > div {
+      .order {
         display: inline-block;
         margin-left: 20px;
-        cursor: pointer;
-        img {
-          width: 30px;
-        }
-        &.arrange {
-          .arrange2 {
-            display: none;
+        line-height: 1;
+        span {
+          margin-right: 10px;
+          vertical-align: middle;
+          &.order-name {
+            color: $main-color;
+            font-weight: 600;
           }
+        }
+        img {
+          width: 23px;
+          vertical-align: middle;
+          cursor: pointer;
         }
       }
       .order-list {
@@ -256,15 +261,23 @@
         top: calc(100% + 10px);
         right: 0;
         background-color: #fff;
-        padding: 15px;
+        padding: 10px;
         border: 1px solid $main-gray;
         box-shadow: 0 1px 10px rgba(0,0,0,0.15);
         min-width: 150px;
         display: none;
         li {
-          margin-bottom: 15px;
+          margin-bottom: 8px;
+          cursor: pointer;
+          padding: 8px 10px;
           &:last-child {
             margin-bottom: 0;
+          }
+          &:hover,&.active {
+            color: $main-color;
+            font-weight: 700;
+            background-color: $third-color;
+            border-radius: 10px;
           }
         }
       }

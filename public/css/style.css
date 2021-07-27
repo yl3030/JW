@@ -667,6 +667,7 @@ footer .right {
 .input-box span {
   font-weight: 700;
   color: #2ea9c5;
+  width: 90px;
 }
 
 .input-box select,
@@ -678,6 +679,7 @@ footer .right {
   border-radius: 5px;
   height: 40px;
   padding: 0 10px;
+  width: calc(100% - 90px);
 }
 
 .input-box .arrow {
@@ -1186,18 +1188,26 @@ footer .right {
   z-index: 10;
 }
 
-.wt .want-tab .icon-box > div {
+.wt .want-tab .icon-box .order {
   display: inline-block;
   margin-left: 20px;
+  line-height: 1;
+}
+
+.wt .want-tab .icon-box .order span {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.wt .want-tab .icon-box .order span.order-name {
+  color: #2ea9c5;
+  font-weight: 600;
+}
+
+.wt .want-tab .icon-box .order img {
+  width: 23px;
+  vertical-align: middle;
   cursor: pointer;
-}
-
-.wt .want-tab .icon-box > div img {
-  width: 30px;
-}
-
-.wt .want-tab .icon-box > div.arrange .arrange2 {
-  display: none;
 }
 
 .wt .want-tab .icon-box .order-list {
@@ -1205,7 +1215,7 @@ footer .right {
   top: calc(100% + 10px);
   right: 0;
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #bebebe;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
@@ -1214,11 +1224,20 @@ footer .right {
 }
 
 .wt .want-tab .icon-box .order-list li {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  padding: 8px 10px;
 }
 
 .wt .want-tab .icon-box .order-list li:last-child {
   margin-bottom: 0;
+}
+
+.wt .want-tab .icon-box .order-list li:hover, .wt .want-tab .icon-box .order-list li.active {
+  color: #2ea9c5;
+  font-weight: 700;
+  background-color: #ddf4fa;
+  border-radius: 10px;
 }
 
 .want-tc {
@@ -2188,17 +2207,19 @@ footer .right {
 
 .publish-banner .publish-content .form-body .car-pic .form-title {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .publish-banner .publish-content .form-body .car-pic .pic {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
   width: 105px;
   height: 105px;
-  position: relative;
-  margin-right: 8px;
 }
 
-.publish-banner .publish-content .form-body .car-pic .pic img {
+.publish-banner .publish-content .form-body .car-pic .pic .publish-pic {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2206,13 +2227,22 @@ footer .right {
      object-fit: cover;
 }
 
+.publish-banner .publish-content .form-body .car-pic .pic:last-child {
+  margin-right: 0;
+}
+
 .publish-banner .publish-content .form-body .car-pic .file-box {
   position: relative;
-  margin: 0 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   width: 105px;
   height: 105px;
   background-color: #f1f1f1;
   cursor: pointer;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-box:last-child {
+  margin-right: 0;
 }
 
 .publish-banner .publish-content .form-body .car-pic .file-box input {
@@ -2225,7 +2255,7 @@ footer .right {
   cursor: pointer;
 }
 
-.publish-banner .publish-content .form-body .car-pic .file-box img {
+.publish-banner .publish-content .form-body .car-pic .file-box .plus {
   width: 25px;
   position: absolute;
   top: 50%;

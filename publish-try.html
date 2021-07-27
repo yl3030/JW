@@ -254,12 +254,23 @@
                 <div class="col-12">
                   <div class="car-pic d-flex align-items-center flex-wrap">
                     <span class="form-title">車輛照片</span>
-                    <div class="pic">
-                      <img src="./public/img/product_1.png" alt="" />
-                    </div>
-                    <div class="file-box">
-                      <input type="file" />
-                      <img src="./public/img/icon_plus.svg" alt="" />
+                    <div id="cp" class="d-flex align-items-center flex-wrap">
+                      <!-- <div class="pic">
+                        <img
+                          class="publish-pic"
+                          src="./public/img/product_1.png"
+                          alt=""
+                        />
+                      </div> -->
+                      <div class="file-box">
+                        <img
+                          class="plus"
+                          src="./public/img/icon_plus.svg"
+                          alt=""
+                        />
+                        <input type="file" id="file-box" />
+                        <!-- <img class="pic" src="./public/img/product_1.png" alt="" /> -->
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -542,6 +553,7 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/datepicker/bootstrap-datepicker.js"></script>
     <script src="./public/js/index.js"></script>
+    <script src="./public/js/publish-upload-pic.js"></script>
 
     <script>
       var now = new Date();
