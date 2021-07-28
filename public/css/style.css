@@ -2336,6 +2336,8 @@ footer .right {
 .publish-banner .publish-content .form-body .structure .input-box .form-second-title {
   font-size: 15px;
   width: 115px;
+  font-weight: 400;
+  color: #4d4d4d;
 }
 
 .publish-banner .publish-content .form-body .structure .input-box input {
@@ -2560,9 +2562,11 @@ footer .right {
   width: 100%;
   padding: 10px 0;
   text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.member .member-box.member-list .list-box ul li.active a {
+.member .member-box.member-list .list-box ul li.active a, .member .member-box.member-list .list-box ul li:hover a {
   color: #2ea9c5;
   background-color: #ddf4fa;
   border-radius: 15px;
@@ -2826,8 +2830,12 @@ footer .right {
   background-color: #81cada;
 }
 
+.member .member-box.member-content.identity .input-box button:hover {
+  background-color: #32bedd;
+}
+
 .member .member-box.member-content.identity .input-box button:active {
-  background-color: #6abacc;
+  background-color: #71d4eb;
 }
 
 .member .member-box.member-content.identity .input-box .remain {
