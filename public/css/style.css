@@ -2211,41 +2211,20 @@ footer .right {
   display: block;
 }
 
-.publish-banner .publish-content .form-body .car-pic .pic {
+.publish-banner .publish-content .form-body .car-pic .file-outer .file-box {
   position: relative;
   margin-right: 10px;
-  margin-bottom: 10px;
-  width: 105px;
-  height: 105px;
-}
-
-.publish-banner .publish-content .form-body .car-pic .pic .publish-pic {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.publish-banner .publish-content .form-body .car-pic .pic:last-child {
-  margin-right: 0;
-}
-
-.publish-banner .publish-content .form-body .car-pic .file-box {
-  position: relative;
-  margin-right: 10px;
-  margin-bottom: 10px;
   width: 105px;
   height: 105px;
   background-color: #f1f1f1;
   cursor: pointer;
 }
 
-.publish-banner .publish-content .form-body .car-pic .file-box:last-child {
+.publish-banner .publish-content .form-body .car-pic .file-outer .file-box:last-child {
   margin-right: 0;
 }
 
-.publish-banner .publish-content .form-body .car-pic .file-box input {
+.publish-banner .publish-content .form-body .car-pic .file-outer .file-box input {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2255,13 +2234,63 @@ footer .right {
   cursor: pointer;
 }
 
-.publish-banner .publish-content .form-body .car-pic .file-box .plus {
+.publish-banner .publish-content .form-body .car-pic .file-outer .file-box .plus {
   width: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .file-box .pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box {
+  margin-top: 5px;
+  display: none;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon:hover img.normal {
+  display: none;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon:hover img.hover {
+  display: inline-block;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon img.hover {
+  display: none;
+}
+
+.publish-banner .publish-content .form-body .car-pic .file-outer .icon-box .icon input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
 .publish-banner .publish-content .form-body .equipped {
