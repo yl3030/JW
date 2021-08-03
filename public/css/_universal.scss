@@ -440,6 +440,11 @@ footer {
     font-weight: 700;
     color: $main-color;
     width: 90px;
+    &.form-second-title {
+      font-size: 15px;
+      font-weight: 400;
+      color: #4d4d4d;
+    }
   }
   select,
   input {
@@ -448,6 +453,7 @@ footer {
     appearance: none;
     @include common-input;
     width: calc(100% - 90px);
+    color: #4d4d4d;
   }
   .arrow {
     width: 15px;
@@ -455,6 +461,14 @@ footer {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &.structure-input {
+    span {
+      width: 115px;
+    }
+    input, .content-text {
+      width: calc(100% - 115px) !important;
+    }
   }
 }
 

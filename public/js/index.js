@@ -68,5 +68,28 @@ $(".order-list li").click(function(){
 $("button.unable").attr("disabled", "true");
 
 
+// 搜尋其他
+$(".other-option").click(function(){
+  if($(this).children(".dropdown-list").hasClass("active")){
+    $(".other-option").children(".dropdown-list").removeClass("active");
+    $(this).children(".dropdown-list").removeClass("active");
+  }else {
+    $(".other-option").children(".dropdown-list").removeClass("active");
+    $(this).children(".dropdown-list").addClass("active");
+  }
+})
 
+// 搜尋標籤
+$(".select-item").click(function(){
+  var selectItem = $(this).text();
+  var choiceLabel = $("<div></div>").addClass("choice-label d-flex align-items-center justify-content-center");
+  var choiceText = $("<span></span>").text(selectItem);
+  var crossBtn = $("<img>").attr("src","./public/img/icon_cross.svg").addClass("cross");
+  choiceLabel.append(choiceText,crossBtn);
+  $(".choice-inner").append(choiceLabel);
+})
+
+$(document).on("click",".cross",function(){
+  $(this).parents(".choice-label").remove();
+});
 

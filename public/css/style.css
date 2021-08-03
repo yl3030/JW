@@ -670,6 +670,12 @@ footer .right {
   width: 90px;
 }
 
+.input-box span.form-second-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
 .input-box select,
 .input-box input {
   -webkit-appearance: none;
@@ -680,6 +686,7 @@ footer .right {
   height: 40px;
   padding: 0 10px;
   width: calc(100% - 90px);
+  color: #4d4d4d;
 }
 
 .input-box .arrow {
@@ -689,6 +696,14 @@ footer .right {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.input-box.structure-input span {
+  width: 115px;
+}
+
+.input-box.structure-input input, .input-box.structure-input .content-text {
+  width: calc(100% - 115px) !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -973,6 +988,7 @@ footer .right {
 .want-banner {
   width: 100%;
   padding-bottom: 50%;
+  z-index: 20;
 }
 
 .want-banner.buy {
@@ -1021,7 +1037,6 @@ footer .right {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  height: 60px;
   padding: 10px;
   background-color: #fff;
 }
@@ -1051,6 +1066,7 @@ footer .right {
   padding: 5px 8px;
   background-color: #81cada;
   border-radius: 8px;
+  margin: 5px 10px 5px 0;
 }
 
 .want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label span {
@@ -1108,8 +1124,8 @@ footer .right {
   margin-right: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .content {
-  width: calc(85% - 65px);
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .content.input-box {
+  margin-bottom: 0;
 }
 
 .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more {
@@ -1132,6 +1148,7 @@ footer .right {
 
 .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
   display: inline-block;
+  position: relative;
 }
 
 .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div span {
@@ -1143,6 +1160,94 @@ footer .right {
   display: inline-block;
   width: 10px;
   margin-left: 5px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li {
+  font-size: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li:hover {
+  color: #2ea9c5;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list {
+  width: 400px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class {
+  cursor: none;
+  margin: 0;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:hover {
+  color: #4d4d4d;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .area-title {
+  width: 65px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list {
+  width: calc(100% - 65px);
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li {
+  display: inline-block;
+  margin: 0 10px 20px 0;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li:hover {
+  color: #2ea9c5;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:last-child .inner-list ul li {
+  margin: 0 10px 0 0;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.color-list {
+  width: 200px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.fuel-list {
+  width: 130px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.person-list {
+  width: 200px;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.exhaust-list {
+  width: 120px;
+  left: inherit;
+  right: 0;
 }
 
 .want-banner .choice-search-box .search form {
@@ -2331,17 +2436,6 @@ footer .right {
   padding: 0 10px;
   background-color: #fff;
   width: auto;
-}
-
-.publish-banner .publish-content .form-body .structure .input-box .form-second-title {
-  font-size: 15px;
-  width: 115px;
-  font-weight: 400;
-  color: #4d4d4d;
-}
-
-.publish-banner .publish-content .form-body .structure .input-box input {
-  width: calc(100% - 115px);
 }
 
 .publish-banner .publish-content .form-btn {
