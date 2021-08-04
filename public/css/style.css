@@ -698,6 +698,10 @@ footer .right {
           transform: translateY(-50%);
 }
 
+.input-box p {
+  width: calc(100% - 90px);
+}
+
 .input-box.structure-input span {
   width: 115px;
 }
@@ -1081,6 +1085,10 @@ footer .right {
   cursor: pointer;
 }
 
+.want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label input {
+  display: none;
+}
+
 .want-banner .choice-search-box .choice .choice-outer .cc-box {
   position: absolute;
   width: 100%;
@@ -1186,6 +1194,10 @@ footer .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list .select-item input {
+  display: none;
 }
 
 .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li {

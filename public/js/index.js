@@ -81,15 +81,28 @@ $(".other-option").click(function(){
 
 // 搜尋標籤
 $(".select-item").click(function(){
-  var selectItem = $(this).text();
+  // 存取select-item順序
+  var indexItem = $(".dropdown-list .select-item").index(this);
+  // 存取內容值
+  var selectItemText = $(this).text();
+  // 新增label，其中的input value = item_ + "select-item順序"
   var choiceLabel = $("<div></div>").addClass("choice-label d-flex align-items-center justify-content-center");
-  var choiceText = $("<span></span>").text(selectItem);
+  var choiceText = $("<span></span>").text(selectItemText);
   var crossBtn = $("<img>").attr("src","./public/img/icon_cross.svg").addClass("cross");
-  choiceLabel.append(choiceText,crossBtn);
+  var choiceInput = $("<input>").attr("value","item_" + indexItem);
+  choiceLabel.append(choiceText,crossBtn,choiceInput);
   $(".choice-inner").append(choiceLabel);
+  // 新增class = item_ + "select-item順序"
+  // 改變其中的input value = 1，代表已選取
+  $(this).addClass("item_" + indexItem).children("input").attr("value","1");
 })
 
 $(document).on("click",".cross",function(){
+  // 刪除label
   $(this).parents(".choice-label").remove();
+  // 存取其中的input value
+  var removeName = $(this).parents(".choice-label").children("input").val();
+  // select-item的class name有和其input value相同者，其中的input value改為0，代表未選取
+  $(".select-item." + removeName).children("input").attr("value","0");
 });
 
