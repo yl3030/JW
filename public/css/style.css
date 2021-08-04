@@ -992,7 +992,7 @@ footer .right {
 .want-banner {
   width: 100%;
   padding-bottom: 50%;
-  z-index: 20;
+  z-index: 0;
 }
 
 .want-banner.buy {
@@ -1003,26 +1003,22 @@ footer .right {
   background-image: url(../img/try_banner.png);
 }
 
-.want-banner .choice-search-box {
+.choice-search-box {
   z-index: 10;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 17vw;
+  margin-top: -20vw;
 }
 
-.want-banner .choice-search-box .choice .choice-outer {
+.choice-search-box .choice .choice-outer {
   position: relative;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .try-tab {
+.choice-search-box .choice .choice-outer .try-tab {
   position: absolute;
   bottom: calc(100% + 15px);
   left: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .try-tab li {
+.choice-search-box .choice .choice-outer .try-tab li {
   display: inline-block;
   margin-right: 8px;
   background: #ffffff;
@@ -1032,12 +1028,12 @@ footer .right {
   cursor: pointer;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .try-tab li.active {
+.choice-search-box .choice .choice-outer .try-tab li.active {
   background-color: #81cada;
   color: #fff;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box {
+.choice-search-box .choice .choice-outer .choice-box {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -1045,14 +1041,14 @@ footer .right {
   background-color: #fff;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box .you-choose {
+.choice-search-box .choice .choice-outer .choice-box .you-choose {
   width: 100px;
   text-align: center;
   color: #828282;
   position: relative;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box .you-choose::after {
+.choice-search-box .choice .choice-outer .choice-box .you-choose::after {
   width: 1px;
   height: 100%;
   position: absolute;
@@ -1062,53 +1058,51 @@ footer .right {
   top: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box > div {
+.choice-search-box .choice .choice-outer .choice-box > div {
   width: calc(100% - 100px);
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label {
+.choice-search-box .choice .choice-outer .choice-box > div .choice-label {
   padding: 5px 8px;
   background-color: #81cada;
   border-radius: 8px;
   margin: 5px 10px 5px 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label span {
+.choice-search-box .choice .choice-outer .choice-box > div .choice-label span {
   color: #fff;
   font-size: 16px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label img {
+.choice-search-box .choice .choice-outer .choice-box > div .choice-label img {
   width: 15px;
   display: block;
   margin-left: 10px;
   cursor: pointer;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .choice-box > div .choice-label input {
+.choice-search-box .choice .choice-outer .choice-box > div .choice-label input {
   display: none;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box {
-  position: absolute;
+.choice-search-box .choice .choice-outer .cc-box {
   width: 100%;
   background-color: #fff;
-  left: 0;
-  top: calc(100% + 10px);
+  margin-top: 10px;
   padding: 10px;
   -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content {
+.choice-search-box .choice .choice-outer .cc-box .choice-content {
   margin-bottom: 20px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content:last-child {
+.choice-search-box .choice .choice-outer .cc-box .choice-content:last-child {
   margin-bottom: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .choice-title {
+.choice-search-box .choice .choice-outer .cc-box .choice-content .choice-title {
   width: 15%;
   padding: 10px;
   background-color: #ddf4fa;
@@ -1117,60 +1111,60 @@ footer .right {
   border-radius: 5px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .content {
+.choice-search-box .choice .choice-outer .cc-box .choice-content .content {
   width: 85%;
   padding-left: 10px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .content span {
+.choice-search-box .choice .choice-outer .cc-box .choice-content .content span {
   font-size: 15px;
   margin-right: 10px;
   cursor: pointer;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .content span:last-child {
+.choice-search-box .choice .choice-outer .cc-box .choice-content .content span:last-child {
   margin-right: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .content.input-box {
+.choice-search-box .choice .choice-outer .cc-box .choice-content .content.input-box {
   margin-bottom: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more {
   width: 65px;
   line-height: 1;
   cursor: pointer;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more span {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more span {
   font-size: 15px;
   vertical-align: middle;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more img {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.brand .more img {
   width: 16px;
   display: inline-block;
   margin-left: 5px;
   vertical-align: middle;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
   display: inline-block;
   position: relative;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div span {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div span {
   font-size: 13px;
   margin-right: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div img {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div img {
   display: inline-block;
   width: 10px;
   margin-left: 5px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list {
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
@@ -1188,81 +1182,78 @@ footer .right {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+  z-index: 10;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.active {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list .select-item input {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list .select-item input {
   display: none;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li {
   font-size: 15px;
   margin: 10px 0;
   cursor: pointer;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li:hover {
   color: #2ea9c5;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list {
-  width: 400px;
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list {
+  width: 360px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class {
   cursor: none;
   margin: 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:hover {
   color: #4d4d4d;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .area-title {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .area-title {
   width: 65px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list {
   width: calc(100% - 65px);
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li {
   display: inline-block;
   margin: 0 10px 20px 0;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li:hover {
   color: #2ea9c5;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:last-child .inner-list ul li {
-  margin: 0 10px 0 0;
-}
-
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.color-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.color-list {
   width: 200px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.fuel-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.fuel-list {
   width: 130px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.person-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.person-list {
   width: 200px;
 }
 
-.want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.exhaust-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.exhaust-list {
   width: 120px;
   left: inherit;
   right: 0;
 }
 
-.want-banner .choice-search-box .search form {
+.choice-search-box .search form {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -1270,7 +1261,7 @@ footer .right {
   background-color: #fff;
 }
 
-.want-banner .choice-search-box .search form input {
+.choice-search-box .search form input {
   border: 0;
   height: 100%;
   padding: 10px;
@@ -1278,11 +1269,11 @@ footer .right {
   border-radius: 10px 0 0 10px;
 }
 
-.want-banner .choice-search-box .search form button {
+.choice-search-box .search form button {
   width: 45px;
 }
 
-.want-banner .choice-search-box .search form button img {
+.choice-search-box .search form button img {
   width: 23px;
 }
 
@@ -1540,14 +1531,11 @@ footer .right {
 }
 
 @media screen and (max-width: 991px) {
-  .want-banner {
-    margin-bottom: 200px;
-  }
-  .want-banner .choice-search-box .choice .choice-outer .cc-box {
+  .choice-search-box .choice .choice-outer .cc-box {
     position: static;
     margin-top: 10px;
   }
-  .want-banner .choice-search-box .search {
+  .choice-search-box .search {
     margin-top: 20px;
   }
   .want-tc .product-box .detail {
@@ -1566,16 +1554,13 @@ footer .right {
 }
 
 @media screen and (max-width: 767px) {
-  .want-banner {
-    margin-bottom: 300px;
-  }
-  .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .content span:nth-child(4) {
+  .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .content span:nth-child(4) {
     display: none;
   }
-  .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .content span:nth-child(5) {
+  .choice-search-box .choice .choice-outer .cc-box .choice-content.brand .content span:nth-child(5) {
     display: none;
   }
-  .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
+  .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
     margin-right: 15px;
     margin-bottom: 10px;
   }
@@ -1611,8 +1596,15 @@ footer .right {
 }
 
 @media screen and (max-width: 575px) {
-  .want-banner {
-    margin-bottom: 400px;
+  .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list {
+    width: 60vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.fuel-list {
+    left: inherit;
+    right: 0;
   }
   .wt .want-tab {
     -webkit-box-pack: justify;
@@ -1651,10 +1643,7 @@ footer .right {
 }
 
 @media screen and (max-width: 414px) {
-  .want-banner {
-    margin-bottom: 500px;
-  }
-  .want-banner .choice-search-box .choice .choice-outer .cc-box .choice-content .choice-title {
+  .choice-search-box .choice .choice-outer .cc-box .choice-content .choice-title {
     width: 25%;
   }
   .want-tc .product-box .detail h4 {
@@ -1690,12 +1679,6 @@ footer .right {
   }
   .publish-btn a span {
     font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .want-banner {
-    margin-bottom: 550px;
   }
 }
 
