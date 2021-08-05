@@ -991,8 +991,8 @@ footer .right {
 
 .want-banner {
   width: 100%;
-  padding-bottom: 50%;
   z-index: 0;
+  padding-bottom: 700px;
 }
 
 .want-banner.buy {
@@ -1004,10 +1004,9 @@ footer .right {
 }
 
 .choice-search-box {
-  z-index: 10;
-  margin-top: -30vw;
-  margin-bottom: 30vw;
   z-index: 20;
+  margin-top: -500px;
+  margin-bottom: 200px;
 }
 
 .choice-search-box .choice .choice-outer {
