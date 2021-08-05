@@ -67,11 +67,8 @@
 
 .choice-search-box {
   z-index: 10;
-  // position: absolute;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // top: 17vw;
-  margin-top: -20vw;
+  margin-top: -30vw;
+  z-index: 20;
   .choice {
     .choice-outer {
       position: relative;
@@ -95,8 +92,12 @@
       .choice-box {
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        padding: 10px;
+        padding: 10px 35px 10px 10px;
         background-color: #fff;
+        background-image: url(../img/icon_search.svg);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) center;
         .you-choose {
           width: 100px;
           text-align: center;
@@ -136,11 +137,8 @@
         }
       }
       .cc-box {
-        // position: absolute;
         width: 100%;
         background-color: #fff;
-        // left: 0;
-        // top: calc(100% + 10px);
         margin-top: 10px;
         padding: 10px;
         box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
@@ -173,9 +171,6 @@
             }
           }
           &.brand {
-            // .content {
-            //   width: calc(85% - 65px);
-            // }
             .more {
               width: 65px;
               line-height: 1;
@@ -218,7 +213,7 @@
                   flex-wrap: wrap;
                   justify-content: space-between;
                   display: none;
-                  z-index: 10;
+                  z-index: 30;
                   &.active {
                     display: flex;
                   }
