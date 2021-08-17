@@ -212,7 +212,7 @@
             width: 15%;
             font-weight: 700;
           }
-          input {
+          input,select {
             width: 85%;
             @include common-input;
           }
@@ -226,7 +226,7 @@
           }
           .area {
             width: 85%;
-            input {
+            input,select {
               width: calc(50% - 7.5px);
               @include common-input;
             }

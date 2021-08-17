@@ -1153,23 +1153,28 @@ footer .right {
   vertical-align: middle;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option {
   display: inline-block;
   position: relative;
+  margin-right: 15px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div span {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option:last-child {
+  margin-right: 0;
+}
+
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option span {
   font-size: 13px;
   margin-right: 0;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div img {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option img {
   display: inline-block;
   width: 10px;
   margin-left: 5px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list {
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
@@ -1190,69 +1195,69 @@ footer .right {
   z-index: 30;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.active {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list .select-item input {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list .select-item input {
   display: none;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list > li {
   font-size: 15px;
   margin: 10px 0;
   cursor: pointer;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list > li:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list > li:hover {
   color: #2ea9c5;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list {
   width: 360px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class {
   cursor: none;
   margin: 0;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class:hover {
   color: #4d4d4d;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .area-title {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class .area-title {
   width: 65px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class .inner-list {
   width: calc(100% - 65px);
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class .inner-list ul li {
   display: inline-block;
   margin: 0 10px 20px 0;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.area-list .area-class .inner-list ul li:hover {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.area-list .area-class .inner-list ul li:hover {
   color: #2ea9c5;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.color-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.color-list {
   width: 200px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.fuel-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.fuel-list {
   width: 130px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.person-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.person-list {
   width: 200px;
 }
 
-.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > div > .dropdown-list.exhaust-list {
+.choice-search-box .choice .choice-outer .cc-box .choice-content.other .content > .other-option > .dropdown-list.exhaust-list {
   width: 120px;
   left: inherit;
   right: 0;
@@ -1793,6 +1798,7 @@ footer .right {
 
 .product-detail .intro {
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .product-detail .price {
@@ -1948,7 +1954,7 @@ footer .right {
   font-weight: 700;
 }
 
-.product-detail #reserve-modal .modal-content .modal-body .input-box input {
+.product-detail #reserve-modal .modal-content .modal-body .input-box input, .product-detail #reserve-modal .modal-content .modal-body .input-box select {
   width: 85%;
   border: 1px solid #bebebe;
   border-radius: 5px;
@@ -1970,7 +1976,7 @@ footer .right {
   width: 85%;
 }
 
-.product-detail #reserve-modal .modal-content .modal-body .area-box .area input {
+.product-detail #reserve-modal .modal-content .modal-body .area-box .area input, .product-detail #reserve-modal .modal-content .modal-body .area-box .area select {
   width: calc(50% - 7.5px);
   border: 1px solid #bebebe;
   border-radius: 5px;
