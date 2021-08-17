@@ -79,18 +79,28 @@ $(".other-option").click(function () {
 
 // 搜尋標籤
 $(".select-item").click(function () {
-  if ($(this).children("input").val() == 0) {
+    // add class "active"
     $(".dropdown-list .select-item").removeClass("active");
     $(this).addClass("active");
-    var itemValue = $(this).data("value");
+
+    // 更改data-value
+    var itemName = $(this).attr("name");
+    $(".select-item[name='" + itemName + "']").not(this).attr("data-value","0");
+    $(this).attr("data-value","1");
+    var itemValue = $(".select-item.active[name='" + itemName + "']").data("value");
+
     // 存取select-item順序
     var indexItem = $(".dropdown-list .select-item").index(this);
+
     // 存取內容值
     var selectItemText = $(this).text();
-    // 新增label，其中的input value = item_ + "select-item順序"
+
+    // 新增label
+    // label中的input value = item_ + "select-item順序"
+    $(".choice-label[name='" + itemName + "']").remove();
     var choiceLabel = $("<div></div>").addClass(
       "choice-label d-flex align-items-center justify-content-center"
-    );
+    ).attr("name",itemName);
     var choiceText = $("<span></span>").text(selectItemText);
     var crossBtn = $("<img>")
       .attr("src", "./public/img/icon_cross.svg")
@@ -98,22 +108,31 @@ $(".select-item").click(function () {
     var choiceInput = $("<input>").attr("value", "item_" + indexItem);
     choiceLabel.append(choiceText, crossBtn, choiceInput);
     $(".choice-inner").append(choiceLabel);
+
     // 新增class = item_ + "select-item順序"
     // 改變其中的input value = 1，代表已選取
-    $(this)
+      $(".select-item[name='" + itemName + "']").not(this).addClass("item_" + indexItem).children("input").attr("value", "0");
+      $(this)
       .addClass("item_" + indexItem)
       .children("input")
       .attr("value", "1");
-  }
 });
 
 $(document).on("click", ".cross", function () {
   // 刪除label
   $(this).parents(".choice-label").remove();
+
   // 存取其中的input value
   var removeName = $(this).parents(".choice-label").children("input").val();
+
   // select-item的class name有和其input value相同者，其中的input value改為0，代表未選取
   $(".select-item." + removeName)
     .children("input")
     .attr("value", "0");
+  
+  // 存取name
+  var labelName = $(this).parents(".choice-label").attr("name");
+
+  // select-item中相同name者的data-value=0
+  $(".select-item[name='" + labelName + "']").attr("data-value","0");
 });
