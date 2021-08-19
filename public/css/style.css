@@ -115,6 +115,13 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.fancybox-wrap {
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 575px) {
   .modal-dialog {
     width: 90%;
