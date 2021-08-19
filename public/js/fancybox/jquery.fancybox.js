@@ -630,7 +630,7 @@
 				viewport = F.getViewport();
 
 				el.css({
-					position : 'absolute',
+					position : 'fixed',
 					top  : (viewport.h * 0.5) + viewport.y,
 					left : (viewport.w * 0.5) + viewport.x
 				});
@@ -1403,7 +1403,7 @@
 				width    = F.wrap.width()  + margin[1] + margin[3],
 				height   = F.wrap.height() + margin[0] + margin[2],
 				rez      = {
-					position: 'absolute',
+					position: 'fixed',
 					top  : margin[0],
 					left : margin[3]
 				};
