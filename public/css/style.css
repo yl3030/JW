@@ -2176,29 +2176,29 @@ footer .right {
 }
 
 @media screen and (max-width: 414px) {
-  .product-detail #reserve-modal .modal-content {
+  .product-detail .reserve-modal .modal-content {
     padding: 40px 20px;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .input-box {
+  .product-detail .reserve-modal .modal-content .modal-body .input-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .input-box .form-title {
+  .product-detail .reserve-modal .modal-content .modal-body .input-box .form-title {
     width: 100%;
     margin-bottom: 10px;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .input-box input {
+  .product-detail .reserve-modal .modal-content .modal-body .input-box input {
     width: 100%;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .area-box {
+  .product-detail .reserve-modal .modal-content .modal-body .area-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .area-box .form-title {
+  .product-detail .reserve-modal .modal-content .modal-body .area-box .form-title {
     width: 100%;
     margin-bottom: 10px;
   }
-  .product-detail #reserve-modal .modal-content .modal-body .area-box .area {
+  .product-detail .reserve-modal .modal-content .modal-body .area-box .area {
     width: 100%;
   }
   .product-detail > div {
