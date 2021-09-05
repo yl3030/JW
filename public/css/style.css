@@ -1923,16 +1923,16 @@ footer .right {
   margin-left: 10px;
 }
 
-.product-detail .reserve-modal .modal-content {
+.reserve-modal .modal-content {
   padding: 40px;
 }
 
-.product-detail .reserve-modal .modal-content .modal-header {
+.reserve-modal .modal-content .modal-header {
   border: 0;
   padding: 0;
 }
 
-.product-detail .reserve-modal .modal-content .modal-header h4 {
+.reserve-modal .modal-content .modal-header h4 {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1940,20 +1940,20 @@ footer .right {
   width: 100%;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body {
+.reserve-modal .modal-content .modal-body {
   padding: 30px 0 0;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .input-box {
+.reserve-modal .modal-content .modal-body .input-box {
   width: 100%;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .input-box .form-title {
+.reserve-modal .modal-content .modal-body .input-box .form-title {
   width: 15%;
   font-weight: 700;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .input-box input, .product-detail .reserve-modal .modal-content .modal-body .input-box select {
+.reserve-modal .modal-content .modal-body .input-box input, .reserve-modal .modal-content .modal-body .input-box select {
   width: 85%;
   border: 1px solid #bebebe;
   border-radius: 5px;
@@ -1961,22 +1961,22 @@ footer .right {
   padding: 0 10px;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .area-box {
+.reserve-modal .modal-content .modal-body .area-box {
   width: 100%;
   margin: 20px 0;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .area-box .form-title {
+.reserve-modal .modal-content .modal-body .area-box .form-title {
   width: 15%;
   font-weight: 700;
   color: #2ea9c5;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .area-box .area {
+.reserve-modal .modal-content .modal-body .area-box .area {
   width: 85%;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .area-box .area input, .product-detail .reserve-modal .modal-content .modal-body .area-box .area select {
+.reserve-modal .modal-content .modal-body .area-box .area input, .reserve-modal .modal-content .modal-body .area-box .area select {
   width: calc(50% - 7.5px);
   border: 1px solid #bebebe;
   border-radius: 5px;
@@ -1984,22 +1984,22 @@ footer .right {
   padding: 0 10px;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .area-box .area span {
+.reserve-modal .modal-content .modal-body .area-box .area span {
   width: 15px;
   text-align: center;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box {
+.reserve-modal .modal-content .modal-body .btn-box {
   margin-top: 40px;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button {
+.reserve-modal .modal-content .modal-body .btn-box button {
   padding: 15px 0;
   width: 150px;
   margin: 0 10px;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.notice {
+.reserve-modal .modal-content .modal-body .btn-box button.notice {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
@@ -2007,19 +2007,19 @@ footer .right {
   transition: 0.3s;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.notice a {
+.reserve-modal .modal-content .modal-body .btn-box button.notice a {
   color: #fff;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.notice:hover {
+.reserve-modal .modal-content .modal-body .btn-box button.notice:hover {
   background-color: #32bedd;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.notice.unable {
+.reserve-modal .modal-content .modal-body .btn-box button.notice.unable {
   background-color: #bebebe;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel {
   border: 1px solid #2ea9c5;
   border-radius: 15px;
   color: #2ea9c5;
@@ -2027,26 +2027,26 @@ footer .right {
   transition: 0.3s;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel a {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel a {
   color: #2ea9c5;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel:hover {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel:hover {
   border-color: #81cada;
   color: #fff;
   background-color: #81cada;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel:hover a {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel:hover a {
   color: #fff;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel.unable {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel.unable {
   background-color: #bebebe;
   color: #fff;
 }
 
-.product-detail .reserve-modal .modal-content .modal-body .btn-box button.cancel.unable a {
+.reserve-modal .modal-content .modal-body .btn-box button.cancel.unable a {
   color: #fff;
 }
 
@@ -2169,31 +2169,6 @@ footer .right {
 }
 
 @media screen and (max-width: 414px) {
-  .product-detail .reserve-modal .modal-content {
-    padding: 40px 20px;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .input-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .input-box .form-title {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .input-box input {
-    width: 100%;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .area-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .area-box .form-title {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .product-detail .reserve-modal .modal-content .modal-body .area-box .area {
-    width: 100%;
-  }
   .product-detail > div {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2204,6 +2179,31 @@ footer .right {
   }
   .product-detail .inform > div > div {
     width: 50%;
+  }
+  .reserve-modal .modal-content {
+    padding: 40px 20px;
+  }
+  .reserve-modal .modal-content .modal-body .input-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reserve-modal .modal-content .modal-body .input-box .form-title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .reserve-modal .modal-content .modal-body .input-box input {
+    width: 100%;
+  }
+  .reserve-modal .modal-content .modal-body .area-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reserve-modal .modal-content .modal-body .area-box .form-title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .reserve-modal .modal-content .modal-body .area-box .area {
+    width: 100%;
   }
 }
 

@@ -190,65 +190,66 @@
       margin-left: 10px;
     }
   }
-  .reserve-modal {
-    .modal-content {
-      padding: 40px;
-      .modal-header {
-        border: 0;
-        padding: 0;
-        h4 {
-          text-align: center;
-          font-size: 18px;
+}
+
+.reserve-modal {
+  .modal-content {
+    padding: 40px;
+    .modal-header {
+      border: 0;
+      padding: 0;
+      h4 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: $main-color;
+        width: 100%;
+      }
+    }
+    .modal-body {
+      padding: 30px 0 0;
+      .input-box {
+        width: 100%;
+        .form-title {
+          width: 15%;
           font-weight: 700;
-          color: $main-color;
-          width: 100%;
+        }
+        input,select {
+          width: 85%;
+          @include common-input;
         }
       }
-      .modal-body {
-        padding: 30px 0 0;
-        .input-box {
-          width: 100%;
-          .form-title {
-            width: 15%;
-            font-weight: 700;
-          }
+      .area-box {
+        width: 100%;
+        margin: 20px 0;
+        .form-title {
+          width: 15%;
+          font-weight: 700;
+          color: $main-color;
+        }
+        .area {
+          width: 85%;
           input,select {
-            width: 85%;
+            width: calc(50% - 7.5px);
             @include common-input;
           }
-        }
-        .area-box {
-          width: 100%;
-          margin: 20px 0;
-          .form-title {
-            width: 15%;
-            font-weight: 700;
-            color: $main-color;
-          }
-          .area {
-            width: 85%;
-            input,select {
-              width: calc(50% - 7.5px);
-              @include common-input;
-            }
-            span {
-              width: 15px;
-              text-align: center;
-            }
+          span {
+            width: 15px;
+            text-align: center;
           }
         }
-        .btn-box {
-          margin-top: 40px;
-          button {
-            padding: 15px 0;
-            width: 150px;
-            margin: 0 10px;
-            &.notice {
-              @include blue-bg-btn;
-            }
-            &.cancel {
-              @include blue-border-btn;
-            }
+      }
+      .btn-box {
+        margin-top: 40px;
+        button {
+          padding: 15px 0;
+          width: 150px;
+          margin: 0 10px;
+          &.notice {
+            @include blue-bg-btn;
+          }
+          &.cancel {
+            @include blue-border-btn;
           }
         }
       }
@@ -382,33 +383,7 @@
 
 @media screen and (max-width: 414px) {
   .product-detail {
-    .reserve-modal {
-        .modal-content {
-            padding: 40px 20px;
-            .modal-body {
-                .input-box {
-                    flex-wrap: wrap;
-                    .form-title {
-                        width: 100%;
-                        margin-bottom: 10px;
-                    }
-                    input {
-                        width: 100%;
-                    }
-                }
-                .area-box {
-                    flex-wrap: wrap;
-                    .form-title {
-                        width: 100%;
-                        margin-bottom: 10px;
-                    }
-                    .area {
-                        width: 100%;
-                    }
-                } 
-            } 
-        } 
-    } 
+    
     > div {
       flex-wrap: wrap;
       .price {
@@ -424,6 +399,33 @@
         } 
     } 
   }
+  .reserve-modal {
+    .modal-content {
+        padding: 40px 20px;
+        .modal-body {
+            .input-box {
+                flex-wrap: wrap;
+                .form-title {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                input {
+                    width: 100%;
+                }
+            }
+            .area-box {
+                flex-wrap: wrap;
+                .form-title {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .area {
+                    width: 100%;
+                }
+            } 
+        } 
+    } 
+} 
 }
 
 @media screen and (max-width: 375px) {
