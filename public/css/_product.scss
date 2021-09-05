@@ -190,7 +190,7 @@
       margin-left: 10px;
     }
   }
-  #reserve-modal {
+  .reserve-modal {
     .modal-content {
       padding: 40px;
       .modal-header {
@@ -223,6 +223,7 @@
           .form-title {
             width: 15%;
             font-weight: 700;
+            color: $main-color;
           }
           .area {
             width: 85%;
