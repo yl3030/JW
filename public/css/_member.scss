@@ -62,7 +62,7 @@
           display: block;
           margin: 0 auto;
         }
-        #purse-modal {
+        .purse-modal {
           h4 {
             font-size: 22px;
             font-weight: 700;
@@ -209,7 +209,7 @@
           }
           input {
             width: 45%;
-            &#verti {
+            &.verti {
               background-color: #f1f1f1;
             }
           }

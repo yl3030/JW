@@ -1510,14 +1510,6 @@ footer .right {
   color: #2ea9c5;
 }
 
-.table-modal#area-modal .modal-body .alphabet span:first-child {
-  width: 40px;
-}
-
-.table-modal#area-modal .modal-body .alphabet span:nth-child(2) {
-  width: calc(100% - 55px);
-}
-
 .other-modal .modal-header {
   padding: 15px;
   -webkit-box-pack: center;
@@ -2720,7 +2712,7 @@ footer .right {
   background-color: #bebebe;
 }
 
-.member .member-box.member-content.purse #purse-modal h4 {
+.member .member-box.member-content.purse .purse-modal h4 {
   font-size: 22px;
   font-weight: 700;
   color: #2ea9c5;
@@ -2729,15 +2721,15 @@ footer .right {
   text-align: center;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content {
+.member .member-box.member-content.purse .purse-modal .modal-content {
   padding: 40px 0 60px;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form {
+.member .member-box.member-content.purse .purse-modal .modal-content form {
   width: 100%;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form input {
+.member .member-box.member-content.purse .purse-modal .modal-content form input {
   border: 1px solid #bebebe;
   border-radius: 5px;
   height: 40px;
@@ -2747,7 +2739,7 @@ footer .right {
   display: block;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form button {
+.member .member-box.member-content.purse .purse-modal .modal-content form button {
   background-color: #81cada;
   border-radius: 15px;
   color: #fff;
@@ -2756,15 +2748,15 @@ footer .right {
   width: 50%;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form button a {
+.member .member-box.member-content.purse .purse-modal .modal-content form button a {
   color: #fff;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form button:hover {
+.member .member-box.member-content.purse .purse-modal .modal-content form button:hover {
   background-color: #32bedd;
 }
 
-.member .member-box.member-content.purse #purse-modal .modal-content form button.unable {
+.member .member-box.member-content.purse .purse-modal .modal-content form button.unable {
   background-color: #bebebe;
 }
 
@@ -2925,7 +2917,7 @@ footer .right {
   width: 45%;
 }
 
-.member .member-box.member-content.identity .input-box input#verti {
+.member .member-box.member-content.identity .input-box input.verti {
   background-color: #f1f1f1;
 }
 

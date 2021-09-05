@@ -491,20 +491,20 @@
       }
     }
   }
-  &#area-modal {
-    .modal-body {
-      .alphabet {
-        span {
-          &:first-child {
-            width: 40px;
-          }
-          &:nth-child(2) {
-            width: calc(100% - 55px);
-          }
-        }
-      }
-    }
-  }
+  // &#area-modal {
+  //   .modal-body {
+  //     .alphabet {
+  //       span {
+  //         &:first-child {
+  //           width: 40px;
+  //         }
+  //         &:nth-child(2) {
+  //           width: calc(100% - 55px);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .other-modal {
