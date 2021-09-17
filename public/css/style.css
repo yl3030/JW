@@ -259,7 +259,7 @@ header > div {
 }
 
 header > div .left img {
-  height: 50px;
+  height: 60px;
 }
 
 header > div .left nav {
@@ -411,17 +411,13 @@ header.scrolldown {
           box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
 }
 
-header.scrolldown > div .left img {
-  height: 40px;
-}
-
 footer {
   padding: 40px 0;
   background-color: #3f3f3f;
 }
 
 footer .left img {
-  height: 50px;
+  height: 60px;
 }
 
 footer .left nav {
@@ -968,8 +964,8 @@ footer .right {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   position: fixed;
-  bottom: 80px;
-  right: 40px;
+  bottom: 25px;
+  right: 100px;
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1678,10 +1674,6 @@ footer .right {
   }
   .want-tc .product-box .main-inform p.road {
     width: 50%;
-  }
-  .publish-btn {
-    right: 20px;
-    bottom: 25px;
   }
   .publish-btn a img {
     width: 25px;

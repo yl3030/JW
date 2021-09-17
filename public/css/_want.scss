@@ -27,8 +27,8 @@
   background-color: $third-color;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
   position: fixed;
-  bottom: 80px;
-  right: 40px;
+  bottom: 25px;
+  right: 100px;
   z-index: 100;
   transition: 0.3s;
   a {
@@ -770,8 +770,8 @@
     } 
   } 
   .publish-btn {
-    right: 20px;
-    bottom: 25px;
+    // right: 100px;
+    // bottom: 25px;
     a {
       img {
         width: 25px;
